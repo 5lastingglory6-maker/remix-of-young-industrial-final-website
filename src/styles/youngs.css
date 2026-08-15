@@ -15,7 +15,9 @@
 
     --font-display:'Archivo', 'Arial Narrow', Arial, sans-serif;
     --font-body:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-mono:'IBM Plex Mono', 'Courier New', monospace;
+    --font-mono:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    /* Ticker keeps the original monospace face */
+    --font-ticker:'IBM Plex Mono', 'Courier New', monospace;
 
     --fs-h1: clamp(2.05rem, 1.35rem + 3vw, 3.5rem);
     --fs-h2: clamp(1.55rem, 1.2rem + 1.5vw, 2.35rem);
