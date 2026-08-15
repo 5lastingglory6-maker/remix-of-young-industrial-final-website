@@ -48,7 +48,7 @@ function RefrigerationServices() {
       {/* Hero */}
       <section className="relative h-[400px] overflow-hidden">
         <img
-          src="/__l5e/assets-v1/b59af5ba-ef40-44c3-b977-9a0a171e477d/gen-machine-room.jpg"
+          src="/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg"
           alt="Industrial refrigeration compressor room"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -102,7 +102,7 @@ function RefrigerationServices() {
       <section className="section-pad bg-white">
         <div className="container-8xl grid gap-12 lg:grid-cols-2 lg:items-center">
           <ImageFrame
-            src="/__l5e/assets-v1/b59af5ba-ef40-44c3-b977-9a0a171e477d/gen-machine-room.jpg"
+            src="/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg"
             alt="Refrigeration equipment"
             className="aspect-[4/3] shadow-lg"
           />
@@ -230,7 +230,7 @@ function RefrigerationServices() {
               </Link>
             </div>
             <ImagePlaceholder
-              src="/__l5e/assets-v1/88470c64-a6a7-4f8c-b11a-40b9f68ec39e/gen-fab-shop.jpg"
+              src="/__l5e/assets-v1/b09c55df-2b0f-4001-b325-eafa36f1ae2a/gen-fab-shop.jpg"
               alt="Industrial refrigeration piping and equipment"
               className="aspect-[4/3] shadow-lg"
             />

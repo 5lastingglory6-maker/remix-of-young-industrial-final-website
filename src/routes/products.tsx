@@ -29,7 +29,7 @@ function Products() {
       {/* Hero */}
       <section className="relative h-[360px] overflow-hidden">
         <img
-          src="/__l5e/assets-v1/b59af5ba-ef40-44c3-b977-9a0a171e477d/gen-machine-room.jpg"
+          src="/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg"
           alt="Industrial refrigeration products and equipment"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -47,7 +47,7 @@ function Products() {
         <div className="container-8xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <ImagePlaceholder
-              src="/__l5e/assets-v1/b59af5ba-ef40-44c3-b977-9a0a171e477d/gen-machine-room.jpg"
+              src="/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg"
               alt="Custom refrigeration package"
               className="aspect-[4/3] shadow-xl"
             />

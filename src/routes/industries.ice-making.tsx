@@ -10,11 +10,11 @@ import GallerySection from '@/components/GallerySection';
 
 const GALLERY_IMAGES = [
   'https://images.pexels.com/photos/2098605/pexels-photo-2098605.jpeg?auto=compress&cs=tinysrgb&w=800',
-  '/__l5e/assets-v1/b59af5ba-ef40-44c3-b977-9a0a171e477d/gen-machine-room.jpg',
+  '/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg',
   'https://images.pexels.com/photos/23503522/pexels-photo-23503522.jpeg?auto=compress&cs=tinysrgb&w=800',
   'https://images.pexels.com/photos/18419622/pexels-photo-18419622.jpeg?auto=compress&cs=tinysrgb&w=800',
   'https://images.pexels.com/photos/1895012/pexels-photo-1895012.jpeg?auto=compress&cs=tinysrgb&w=800',
-  '/__l5e/assets-v1/88470c64-a6a7-4f8c-b11a-40b9f68ec39e/gen-fab-shop.jpg',
+  '/__l5e/assets-v1/b09c55df-2b0f-4001-b325-eafa36f1ae2a/gen-fab-shop.jpg',
   'https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=800',
   'https://images.pexels.com/photos/5321429/pexels-photo-5321429.jpeg?auto=compress&cs=tinysrgb&w=800',
 ];
@@ -125,7 +125,7 @@ function IceMaking() {
               </ul>
             </div>
             <ImagePlaceholder
-              src="/__l5e/assets-v1/b59af5ba-ef40-44c3-b977-9a0a171e477d/gen-machine-room.jpg"
+              src="/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg"
               alt="Industrial cold storage facility"
               className="aspect-[4/3] shadow-lg"
             />
@@ -194,7 +194,7 @@ function IceMaking() {
               </div>
             </div>
             <ImagePlaceholder
-              src="/__l5e/assets-v1/88470c64-a6a7-4f8c-b11a-40b9f68ec39e/gen-fab-shop.jpg"
+              src="/__l5e/assets-v1/b09c55df-2b0f-4001-b325-eafa36f1ae2a/gen-fab-shop.jpg"
               alt="Industrial refrigeration processing facility"
               className="aspect-[4/3] shadow-lg"
             />

@@ -33,10 +33,10 @@ const CAPABILITIES: { icon: typeof Layers; title: string; shortDesc: string; ful
 
 const INDUSTRIES = [
   { title: 'Oil and Gas', to: '/industries/oil-and-gas', img: 'https://images.pexels.com/photos/1108104/pexels-photo-1108104.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { title: 'Pulp and Paper', to: '/industries/pulp-and-paper', img: '/__l5e/assets-v1/88470c64-a6a7-4f8c-b11a-40b9f68ec39e/gen-fab-shop.jpg' },
+  { title: 'Pulp and Paper', to: '/industries/pulp-and-paper', img: '/__l5e/assets-v1/b09c55df-2b0f-4001-b325-eafa36f1ae2a/gen-fab-shop.jpg' },
   { title: 'Power Generation', to: '/industries/power-generation', img: 'https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=800' },
   { title: 'Municipal Water and Sewer', to: '/industries/municipal-water-sewer', img: 'https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { title: 'Food Processing', to: '/industries/food-processing', img: '/__l5e/assets-v1/b59af5ba-ef40-44c3-b977-9a0a171e477d/gen-machine-room.jpg' },
+  { title: 'Food Processing', to: '/industries/food-processing', img: '/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg' },
   { title: 'Ice Making', to: '/industries/ice-making', img: 'https://images.pexels.com/photos/2098605/pexels-photo-2098605.jpeg?auto=compress&cs=tinysrgb&w=800' },
 ];
 

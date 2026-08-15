@@ -12,7 +12,7 @@ const SOLUTIONS: { icon: LucideIcon; title: string; desc: string; img: string }[
     icon: Snowflake,
     title: 'Refrigeration Skids',
     desc: 'Pre-engineered refrigeration packages piped, wired, and shop-tested before delivery.',
-    img: '/__l5e/assets-v1/b59af5ba-ef40-44c3-b977-9a0a171e477d/gen-machine-room.jpg',
+    img: '/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg',
   },
   {
     icon: Gauge,
