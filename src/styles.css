@@ -142,3 +142,133 @@
     color: var(--color-foreground);
   }
 }
+
+/* ---------------------------------------------------------------
+ * Ported design system (navy / steel / safety industrial palette)
+ * --------------------------------------------------------------- */
+
+@theme {
+  --color-navy-50: #e6eef7;
+  --color-navy-100: #cfe0f0;
+  --color-navy-200: #99bfe0;
+  --color-navy-300: #4580b2;
+  --color-navy-400: #1470b1;
+  --color-navy-500: #025599;
+  --color-navy-600: #024680;
+  --color-navy-700: #023868;
+  --color-navy-800: #012a4f;
+  --color-navy-900: #011a33;
+  --color-navy-950: #00101f;
+
+  --color-steel-50: #f6f7f9;
+  --color-steel-100: #eceef2;
+  --color-steel-200: #d4d9e1;
+  --color-steel-300: #aeb7c7;
+  --color-steel-400: #828fa6;
+  --color-steel-500: #647091;
+  --color-steel-600: #4e5978;
+  --color-steel-700: #404862;
+  --color-steel-800: #373e53;
+  --color-steel-900: #2f3447;
+
+  --color-safety-50: #fff6ed;
+  --color-safety-100: #ffe9d4;
+  --color-safety-200: #ffcfa8;
+  --color-safety-300: #ffac70;
+  --color-safety-400: #fb923c;
+  --color-safety-500: #f97316;
+  --color-safety-600: #ea580c;
+  --color-safety-700: #c2410c;
+  --color-safety-800: #9a3412;
+  --color-safety-900: #7c2d12;
+
+  --font-sans: Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-heading: Oswald, Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  --container-8xl: 88rem;
+
+  --animate-fade-up: fade-up 0.6s ease-out both;
+  --animate-fade-in: fade-in 0.5s ease-out both;
+
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-steel-800 bg-white antialiased;
+    line-height: 1.55;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-heading font-bold tracking-tight text-navy-800;
+  }
+  /* Compact, solid paragraph style (matches the Offices & Residential page) */
+  p:not(.eyebrow) {
+    line-height: 1.55 !important;
+    color: var(--color-steel-700);
+  }
+}
+
+@utility container-8xl {
+  @apply mx-auto max-w-8xl px-4 sm:px-6 lg:px-8;
+}
+
+@utility btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border-2 border-navy-500 bg-navy-500 px-6 py-3 text-sm font-semibold uppercase tracking-[0.06em] text-white shadow-sm transition-all hover:bg-white hover:text-navy-700 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-navy-400 focus:ring-offset-2;
+}
+
+@utility btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border border-navy-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.06em] text-navy-700 transition-all hover:bg-navy-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-navy-400 focus:ring-offset-2;
+}
+
+/* Solid navy button — inverted: white with navy text, then navy with white text on hover */
+@utility btn-navy {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border-2 border-navy-600 bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.06em] text-navy-700 transition-colors hover:bg-navy-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-navy-400 focus:ring-offset-2;
+}
+
+/* Same inverted style for dark navy backgrounds */
+@utility btn-navy-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-md border-2 border-white bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.06em] text-navy-700 transition-colors hover:border-navy-600 hover:bg-navy-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2;
+}
+
+@utility btn-ghost {
+  @apply inline-flex items-center gap-1 text-sm font-semibold uppercase tracking-[0.06em] text-safety-600 transition-colors hover:text-safety-700;
+}
+
+@utility eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.2em] text-safety-600;
+}
+
+@utility lede {
+  @apply text-lg;
+  line-height: 1.55;
+  max-width: 56ch;
+}
+
+@utility section-pad {
+  @apply py-16 md:py-24;
+}
