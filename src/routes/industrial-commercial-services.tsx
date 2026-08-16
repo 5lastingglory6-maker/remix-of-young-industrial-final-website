@@ -7,7 +7,7 @@ import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
 import ProjectsSection from '@/components/ProjectsSection';
 import heroFacility from"@/assets/hero-facility.png.asset.json";
-import heroIndustry from"@/assets/hero-industry.png.asset.json";
+import heroRefinery from"@/assets/hero-industrial-refinery.png.asset.json";
 
 const CAPABILITIES = [
   {
@@ -54,12 +54,12 @@ function IndustrialCommercialServices() {
       <section className="relative">
         <div className="relative h-[600px] md:h-[680px] overflow-hidden">
           <img
-            src={heroIndustry.url}
-            alt="Industrial and commercial services"
+            src={heroRefinery.url}
+            alt="Young's Industrial service trucks at a refinery site"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-900/70 to-navy-900/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/65 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950/35 to-transparent" />
           <div className="container-8xl relative flex h-full items-center">
             <div className="max-w-2xl animate-fade-up">
               <p className="eyebrow text-safety-400 mb-4">35 Years of Industrial Excellence</p>
