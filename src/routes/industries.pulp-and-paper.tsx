@@ -206,7 +206,7 @@ function PulpAndPaper() {
         eyebrow="Related Projects"
         title="Projects in This Sector"
         bg="bg-white"
-        slugs={['pulp-mill-pipe-spooling', 'mining-pump-rebuild', 'municipal-water-pump-station']}
+        slugs={['vytrell-voiseys-bay', 'pulp-mill-pipe-spooling', 'mining-pump-rebuild']}
       />
 
       <GallerySection

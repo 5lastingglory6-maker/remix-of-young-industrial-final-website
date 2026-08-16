@@ -206,7 +206,7 @@ function FoodProcessing() {
         eyebrow="Related Projects"
         title="Projects in This Sector"
         bg="bg-white"
-        slugs={['food-processing-cip-skid', 'dartmouth-cold-storage', 'fishing-vessel-refrigeration']}
+        slugs={['quinlan-processing-facility', 'true-north-salmon', 'fogo-island-coop']}
       />
 
       <GallerySection

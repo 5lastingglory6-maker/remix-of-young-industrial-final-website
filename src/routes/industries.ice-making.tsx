@@ -206,7 +206,7 @@ function IceMaking() {
         eyebrow="Related Projects"
         title="Projects in This Sector"
         bg="bg-white"
-        slugs={['ice-plant-installation', 'arena-ice-plant', 'dartmouth-cold-storage']}
+        slugs={['paradise-twin-arena', 'torngat-fish-producers-coop', 'ice-plant-installation']}
       />
 
       <GallerySection
