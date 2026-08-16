@@ -5,6 +5,7 @@ import ImagePlaceholder from '@/components/ImagePlaceholder';
 import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
 import mycomAsset from '@/assets/mycom-cropped.jpg.asset.json';
+import geneglaceAsset from '@/assets/geneglace-cropped.png.asset.json';
 
 const CATEGORIES = [
   {
@@ -15,7 +16,7 @@ const CATEGORIES = [
   {
     title: 'Ice Equipment, Chillers & Heat Exchangers',
     desc: 'Complete cooling and ice-making solutions for commercial and industrial use. From North Star and Geneglace ice equipment to process chillers and plate heat exchangers, we help you move and remove heat exactly where it is needed.',
-    img: 'https://images.pexels.com/photos/2098605/pexels-photo-2098605.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img: geneglaceAsset.url,
   },
   {
     title: 'Pumps & Pump Rebuilding',
