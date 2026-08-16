@@ -4,12 +4,13 @@ import { ArrowRight } from 'lucide-react';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
+import mycomAsset from '@/assets/mycom-cropped.jpg.asset.json';
 
 const CATEGORIES = [
   {
     title: 'Compressors & Evaporative Condensers',
     desc: 'Reliable compression and heat rejection from the names industrial refrigeration depends on. We supply Mycom compressors and parts alongside Baltimore Aircoil evaporative condensers to keep your plant running efficiently.',
-    img: 'https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img: mycomAsset.url,
   },
   {
     title: 'Ice Equipment, Chillers & Heat Exchangers',
