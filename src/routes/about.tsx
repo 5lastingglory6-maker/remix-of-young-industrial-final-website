@@ -1,6 +1,8 @@
 import { createFileRoute } from"@tanstack/react-router";
 import { Award, BadgeCheck, ShieldCheck, MapPin, Target, Handshake } from 'lucide-react';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
+import aboutUsAsset from '@/assets/about-us-technician.jpg.asset.json';
+
 import TrustBar from '@/components/TrustBar';
 import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
@@ -50,10 +52,11 @@ function About() {
               </div>
             </div>
             <ImagePlaceholder
-              src="https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Industrial fabrication shop"
+              src={aboutUsAsset.url}
+              alt="Young's Industrial technician charging a refrigeration skid in the fabrication shop"
               className="aspect-[4/3] shadow-lg"
             />
+
           </div>
         </div>
       </section>
