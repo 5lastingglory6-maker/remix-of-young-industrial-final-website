@@ -164,10 +164,11 @@ function FabricationServices() {
               </div>
             </div>
             <ImagePlaceholder
-              src="https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="CNC machining equipment"
+              src="/__l5e/assets-v1/0969a388-f64b-4022-b98a-fa6bb549ab46/p-fabrication-img.jpg"
+              alt="Machine and welding shop fabrication work"
               className="aspect-[4/3] shadow-lg"
             />
+
           </div>
         </div>
       </section>
