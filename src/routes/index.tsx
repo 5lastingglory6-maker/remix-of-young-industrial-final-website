@@ -27,8 +27,8 @@ function Home() {
             alt="Young's Industrial service trucks at a refinery site"
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/50 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-navy-950/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/75 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950/45 to-transparent" />
           <div className="container-8xl relative flex h-full items-center justify-end">
             <div className="max-w-2xl animate-fade-up text-right">
               <p className="eyebrow text-safety-400 mb-4">35 Years of Industrial Excellence</p>
