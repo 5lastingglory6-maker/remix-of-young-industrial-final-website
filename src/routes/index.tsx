@@ -7,7 +7,7 @@ import SplitSection from '@/components/SplitSection';
 import StatsSection from '@/components/StatsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import CareersBanner from '@/components/CareersBanner';
-import heroIndustry from"@/assets/hero-industry.png.asset.json";
+import heroRefinery from "@/assets/hero-industrial-refinery.png.asset.json";
 
 const TESTIMONIALS = [
   { quote:"Young's delivered our cold storage build ahead of schedule and the system has run flawlessly through our busiest season. Their in-house fabrication made all the difference.", name: 'David MacDonald', role: 'Operations Manager, Atlantic Cold Logistics' },
