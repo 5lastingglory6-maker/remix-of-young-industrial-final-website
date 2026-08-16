@@ -32,13 +32,14 @@ const CAPABILITIES: { icon: typeof Layers; title: string; shortDesc: string; ful
 ];
 
 const INDUSTRIES = [
-  { title: 'Oil and Gas', to: '/industries/oil-and-gas', img: 'https://images.pexels.com/photos/1108104/pexels-photo-1108104.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { title: 'Pulp and Paper', to: '/industries/pulp-and-paper', img: '/__l5e/assets-v1/b09c55df-2b0f-4001-b325-eafa36f1ae2a/gen-fab-shop.jpg' },
-  { title: 'Power Generation', to: '/industries/power-generation', img: 'https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { title: 'Municipal Water and Sewer', to: '/industries/municipal-water-sewer', img: 'https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { title: 'Food Processing', to: '/industries/food-processing', img: '/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg' },
-  { title: 'Ice Making', to: '/industries/ice-making', img: 'https://images.pexels.com/photos/2098605/pexels-photo-2098605.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { title: 'Oil and Gas', to: '/industries/oil-and-gas', img: '/__l5e/assets-v1/7b6049cb-6f74-4019-bbf4-05d1435007ac/hero-industrial-refinery.png' },
+  { title: 'Pulp and Paper', to: '/industries/pulp-and-paper', img: '/__l5e/assets-v1/355602eb-8ba6-41db-a209-3bd537ae9b3f/heritage-plant.jpg' },
+  { title: 'Power Generation', to: '/industries/power-generation', img: '/__l5e/assets-v1/8fed7112-d825-49aa-b99d-353d0a3ed276/hero-plant.png' },
+  { title: 'Municipal Water and Sewer', to: '/industries/municipal-water-sewer', img: '/__l5e/assets-v1/b0200281-43ff-41fc-9d90-66e01d6e59d3/p-industrial-cooling-compressor-2.jpg' },
+  { title: 'Food Processing', to: '/industries/food-processing', img: '/__l5e/assets-v1/d0c0acc5-f409-48c7-a540-a702e3aeeddc/p-geneglace-flake-ice-seafood-processsing.jpg' },
+  { title: 'Ice Making', to: '/industries/ice-making', img: '/__l5e/assets-v1/cd7fe245-4e7f-421f-951f-60d9a494f914/p-ice-flakes-industrial-chemistry-cool-down.jpg' },
 ];
+
 
 function CapabilityCards() {
   const [expanded, setExpanded] = useState<Set<number>>(new Set());
@@ -163,10 +164,11 @@ function FabricationServices() {
               </div>
             </div>
             <ImagePlaceholder
-              src="https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="CNC machining equipment"
+              src="/__l5e/assets-v1/0969a388-f64b-4022-b98a-fa6bb549ab46/p-fabrication-img.jpg"
+              alt="Machine and welding shop fabrication work"
               className="aspect-[4/3] shadow-lg"
             />
+
           </div>
         </div>
       </section>
