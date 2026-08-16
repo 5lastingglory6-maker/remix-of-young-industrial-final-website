@@ -83,7 +83,7 @@ function Projects() {
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <p className="text-xs font-semibold uppercase tracking-wider text-safety-600">{project.industry}</p>
-                  <h3 className="mt-2 text-lg font-bold text-navy-800 group-hover:text-safety-600 transition-colors">{project.title}</h3>
+                  <h3 className="mt-2 text-lg font-bold text-navy-800 group-hover:text-navy-600 transition-colors">{project.title}</h3>
                   <p className="mt-1 text-sm text-steel-500">{project.client} · {project.location}</p>
                   <p className="mt-3 text-sm text-steel-600 flex-1">{project.summary}</p>
                   <span className="btn-ghost mt-4">

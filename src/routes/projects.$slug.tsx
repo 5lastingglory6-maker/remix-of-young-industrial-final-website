@@ -156,7 +156,7 @@ function ProjectDetail() {
                 </div>
                 <div className="p-5">
                   <p className="text-xs font-semibold uppercase tracking-wider text-safety-600">{p.industry}</p>
-                  <h3 className="mt-1 font-bold text-navy-800 group-hover:text-safety-600 transition-colors">{p.title}</h3>
+                  <h3 className="mt-1 font-bold text-navy-800 group-hover:text-navy-600 transition-colors">{p.title}</h3>
                 </div>
               </Link>
             ))}
