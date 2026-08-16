@@ -1225,3 +1225,33 @@ const LEGACY_PROJECTS: Project[] = [
     ],
   },
 ];
+
+/**
+ * Full portfolio. Real client work always sorts ahead of the legacy entries,
+ * everywhere projects are rendered.
+ */
+export const PROJECTS: Project[] = [
+  ...REAL_PROJECTS,
+  ...LEGACY_PROJECTS.map((p) => ({ ...p, sector: p.sector ?? (p.category as ProjectSector) })),
+];
+
+/** Sector filter order used on the portfolio grid. */
+export const PROJECT_SECTORS: ProjectSector[] = [
+  'Public Infrastructure',
+  'Energy & Heavy Industry',
+  'Marine & Seafood',
+  'Institutional & Healthcare',
+  'Fabrication',
+  'Refrigeration',
+  'Marine',
+  'Offshore',
+];
+
+/** Returns projects for the given slugs, keeping featured (real) work first. */
+export function orderProjects(projects: Project[]): Project[] {
+  const index = new Map(PROJECTS.map((p, i) => [p.slug, i]));
+  return [...projects].sort(
+    (a, b) => Number(!!b.featured) - Number(!!a.featured) || (index.get(a.slug) ?? 0) - (index.get(b.slug) ?? 0),
+  );
+}
+
