@@ -6,6 +6,7 @@ import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
 import CommunitySection from '@/components/CommunitySection';
 import TeamSection from '@/components/TeamSection';
+import aboutBanner from '@/assets/company_building_and_car.jpg.asset.json';
 
 
 
@@ -15,7 +16,7 @@ function About() {
       {/* Header image */}
       <section className="relative h-[360px] md:h-[440px] overflow-hidden">
         <img
-          src="https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src={aboutBanner.url}
           alt="Young's Industrial facility and team"
           className="absolute inset-0 h-full w-full object-cover"
         />
