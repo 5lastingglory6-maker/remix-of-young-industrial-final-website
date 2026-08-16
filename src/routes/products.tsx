@@ -6,6 +6,7 @@ import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
 import mycomAsset from '@/assets/mycom-cropped.jpg.asset.json';
 import geneglaceAsset from '@/assets/geneglace-cropped.png.asset.json';
+import cornellAsset from '@/assets/cornell-cropped.jpg.asset.json';
 
 const CATEGORIES = [
   {
