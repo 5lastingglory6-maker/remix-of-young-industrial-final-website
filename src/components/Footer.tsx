@@ -15,30 +15,30 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-navy-900 text-navy-100">
+    <footer className="bg-navy-900 text-white">
       <div className="container-8xl py-16">
         <div className="grid gap-12 md:grid-cols-3">
           {/* Company info */}
           <div>
-            <div className="mb-5">
+            <div className="mb-5 inline-block rounded-lg bg-white p-3">
               <img
                 src={logoImg.url}
                 alt="Young's Industrial"
-                className="h-14 w-auto object-contain brightness-0 invert"
+                className="h-12 w-auto object-contain"
               />
             </div>
-            <address className="not-italic space-y-3 text-sm leading-relaxed text-navy-200">
+            <address className="not-italic space-y-3 text-sm leading-relaxed text-white">
               <p className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 text-safety-400 shrink-0" />
                 <span>{COMPANY.address}</span>
               </p>
               <p className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-safety-400 shrink-0" />
-                <a href={`tel:${COMPANY.phone.replace(/[^+\d]/g, '')}`} className="hover:text-white transition-colors">{COMPANY.phone}</a>
+                <a href={`tel:${COMPANY.phone.replace(/[^+\d]/g, '')}`} className="hover:text-safety-400 transition-colors">{COMPANY.phone}</a>
               </p>
               <p className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-safety-400 shrink-0" />
-                <a href={`mailto:${COMPANY.email}`} className="hover:text-white transition-colors">{COMPANY.email}</a>
+                <a href={`mailto:${COMPANY.email}`} className="hover:text-safety-400 transition-colors">{COMPANY.email}</a>
               </p>
             </address>
           </div>
@@ -49,7 +49,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.to}>
-                  <Link to={link.to} className="text-sm text-navy-200 hover:text-safety-400 transition-colors">
+                  <Link to={link.to} className="text-sm text-white hover:text-safety-400 transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -64,14 +64,14 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="flex h-10 w-10 items-center justify-center rounded-md bg-navy-700 hover:bg-safety-500 transition-colors"
+                className="flex h-10 w-10 items-center justify-center rounded-md bg-white/10 hover:bg-safety-500 transition-colors text-white"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="#"
                 aria-label="Facebook"
-                className="flex h-10 w-10 items-center justify-center rounded-md bg-navy-700 hover:bg-safety-500 transition-colors"
+                className="flex h-10 w-10 items-center justify-center rounded-md bg-white/10 hover:bg-safety-500 transition-colors text-white"
               >
                 <Facebook className="h-5 w-5" />
               </a>
@@ -85,12 +85,12 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-navy-800">
-        <div className="container-8xl py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-navy-300">
+      <div className="border-t border-white/10">
+        <div className="container-8xl py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/80">
           <p>&copy; {year} {COMPANY.name}. {COMPANY.registration}. All rights reserved.</p>
           <div className="flex gap-5">
-            <Link to="/terms" className="hover:text-white transition-colors">Terms</Link>
-            <Link to="/privacy" className="hover:text-white transition-colors">Privacy</Link>
+            <Link to="/terms" className="hover:text-safety-400 transition-colors">Terms</Link>
+            <Link to="/privacy" className="hover:text-safety-400 transition-colors">Privacy</Link>
           </div>
         </div>
       </div>
