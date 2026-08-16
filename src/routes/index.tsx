@@ -29,8 +29,8 @@ function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-950/50 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950/30 to-transparent" />
-          <div className="container-8xl relative flex h-full items-center">
-            <div className="max-w-2xl animate-fade-up">
+          <div className="container-8xl relative flex h-full items-center justify-end">
+            <div className="max-w-2xl animate-fade-up text-right">
               <p className="eyebrow text-safety-400 mb-4">35 Years of Industrial Excellence</p>
               <h1 className="text-4xl font-bold leading-tight text-white md:text-6xl">
                 Built on Excellence Since 2000
@@ -38,14 +38,14 @@ function Home() {
               <p className="mt-5 text-lg text-navy-100 md:text-xl">
                 Industrial Refrigeration, Fabrication &amp; Marine Equipment Services Across Atlantic Canada
               </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-end">
                 <Link to="/contact" className="btn-primary">
                   Request a Quote
                   <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
                   to="/projects"
-                  className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-navy-600 bg-navy-600 px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-white hover:text-navy-700"
+                  className="inline-flex items-center justify-center gap-2 rounded-md bg-white px-6 py-3 text-sm font-semibold uppercase tracking-wider text-navy-700 transition-colors hover:bg-navy-700 hover:text-white"
                 >
                   View Our Projects
                 </Link>
