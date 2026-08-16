@@ -12,7 +12,7 @@ export function ProjectMedia({
 }: {
   project: Project;
   className?: string;
-  note?: string;
+  note?: string | undefined;
 }) {
   if (project.image) {
     return (
