@@ -6,6 +6,7 @@ import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
 import mycomAsset from '@/assets/mycom-cropped.jpg.asset.json';
 import geneglaceAsset from '@/assets/geneglace-cropped.png.asset.json';
+import cornellAsset from '@/assets/cornell-cropped.jpg.asset.json';
 
 const CATEGORIES = [
   {
@@ -21,7 +22,7 @@ const CATEGORIES = [
   {
     title: 'Pumps & Pump Rebuilding',
     desc: 'New industrial pumps and complete in-shop rebuild services to keep your fluid systems moving. Our rebuild program restores worn pumps to reliable working condition and extends the life of your equipment.',
-    img: 'https://images.pexels.com/photos/2760243/pexels-photo-2760243.jpeg?auto=compress&cs=tinysrgb&w=800',
+    img: cornellAsset.url,
   },
 ];
 
