@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "77f89076-2187-47ee-8429-90f102f31129",
-  "project_id": "ec4e93da-2a5c-4d9f-9c58-95f910757e9c",
-  "url": "/__l5e/assets-v1/77f89076-2187-47ee-8429-90f102f31129/g-panel.jpg",
-  "r2_key": "a/v1/ec4e93da-2a5c-4d9f-9c58-95f910757e9c/77f89076-2187-47ee-8429-90f102f31129/g-panel.jpg",
-  "original_filename": "g-panel.jpg",
-  "size": 51901,
   "content_type": "image/jpeg",
-  "created_at": "2026-08-15T17:24:02Z"
+  "created_at": "2026-08-15T17:24:02Z",
+  "original_filename": "g-panel.jpg",
+  "project_id": "505c4137-b717-4e3e-b23f-a53d695b8ee2",
+  "r2_key": "a/v1/505c4137-b717-4e3e-b23f-a53d695b8ee2/77f89076-2187-47ee-8429-90f102f31129/g-panel.jpg",
+  "size": 51901,
+  "url": "/__l5e/assets-v1/77f89076-2187-47ee-8429-90f102f31129/g-panel.jpg",
+  "version": 1
 }
