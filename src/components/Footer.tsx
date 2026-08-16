@@ -28,17 +28,17 @@ export default function Footer() {
               />
             </div>
             <address className="not-italic space-y-3 text-sm leading-relaxed text-white">
-              <p className="flex items-start gap-3">
+              <p className="!text-white flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 text-safety-400 shrink-0" />
-                <span>{COMPANY.address}</span>
+                <span className="text-white">{COMPANY.address}</span>
               </p>
-              <p className="flex items-center gap-3">
+              <p className="!text-white flex items-center gap-3">
                 <Phone className="h-4 w-4 text-safety-400 shrink-0" />
-                <a href={`tel:${COMPANY.phone.replace(/[^+\d]/g, '')}`} className="hover:text-safety-400 transition-colors">{COMPANY.phone}</a>
+                <a href={`tel:${COMPANY.phone.replace(/[^+\d]/g, '')}`} className="text-white hover:text-safety-400 transition-colors">{COMPANY.phone}</a>
               </p>
-              <p className="flex items-center gap-3">
+              <p className="!text-white flex items-center gap-3">
                 <Mail className="h-4 w-4 text-safety-400 shrink-0" />
-                <a href={`mailto:${COMPANY.email}`} className="hover:text-safety-400 transition-colors">{COMPANY.email}</a>
+                <a href={`mailto:${COMPANY.email}`} className="text-white hover:text-safety-400 transition-colors">{COMPANY.email}</a>
               </p>
             </address>
           </div>
@@ -87,10 +87,10 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="container-8xl py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/80">
-          <p>&copy; {year} {COMPANY.name}. {COMPANY.registration}. All rights reserved.</p>
+          <p className="!text-white">&copy; {year} {COMPANY.name}. {COMPANY.registration}. All rights reserved.</p>
           <div className="flex gap-5">
-            <Link to="/terms" className="hover:text-safety-400 transition-colors">Terms</Link>
-            <Link to="/privacy" className="hover:text-safety-400 transition-colors">Privacy</Link>
+            <Link to="/terms" className="text-white hover:text-safety-400 transition-colors">Terms</Link>
+            <Link to="/privacy" className="text-white hover:text-safety-400 transition-colors">Privacy</Link>
           </div>
         </div>
       </div>
