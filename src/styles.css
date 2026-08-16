@@ -226,10 +226,11 @@
   h5 {
     @apply font-heading font-bold tracking-tight text-navy-800;
   }
-  /* Compact, solid paragraph style (matches the Offices & Residential page) */
+  /* Compact paragraph style (matches the Offices & Residential page) */
   p:not(.eyebrow) {
     line-height: 1.55 !important;
     color: var(--color-steel-700);
+    max-width: 65ch;
   }
 }
 
