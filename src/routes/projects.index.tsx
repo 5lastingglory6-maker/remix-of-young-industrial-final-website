@@ -1,24 +1,18 @@
-import { createFileRoute } from"@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { useState } from 'react';
-import { Link } from '@/components/SiteLink';
-import { ArrowRight, Filter } from 'lucide-react';
-import { PROJECTS, type ProjectCategory } from '@/data/site';
-import SectionHeading from '@/components/SectionHeading';
+import { PROJECTS, PROJECT_SECTORS, type ProjectSector } from '@/data/site';
+import ProjectCard from '@/components/ProjectCard';
 import CTABanner from '@/components/CTABanner';
 
-const CATEGORIES: (ProjectCategory | 'All')[] = ['All', 'Fabrication', 'Refrigeration', 'Marine', 'Offshore'];
-
-const CATEGORY_COLORS: Record<ProjectCategory, string> = {
-  Fabrication: 'bg-safety-100 text-safety-700',
-  Refrigeration: 'bg-navy-100 text-navy-700',
-  Marine: 'bg-steel-200 text-steel-700',
-  Offshore: 'bg-navy-700 text-white',
-};
+const FILTERS: (ProjectSector | 'All')[] = ['All', ...PROJECT_SECTORS];
 
 function Projects() {
-  const [active, setActive] = useState<ProjectCategory | 'All'>('All');
+  const [active, setActive] = useState<ProjectSector | 'All'>('All');
 
-  const filtered = active === 'All' ? PROJECTS : PROJECTS.filter((p) => p.category === active);
+  const filtered =
+    active === 'All'
+      ? PROJECTS
+      : PROJECTS.filter((p) => (p.sector ?? p.category) === active);
 
   return (
     <>
@@ -44,58 +38,41 @@ function Projects() {
       {/* Filter + grid */}
       <section className="section-pad bg-white">
         <div className="container-8xl">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
-            <SectionHeading eyebrow="Portfolio" title="Featured Projects" />
-            <div className="flex items-center gap-2 overflow-x-auto pb-1">
-              <Filter className="h-4 w-4 text-steel-400 shrink-0" />
-              {CATEGORIES.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setActive(cat)}
-                  className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
-                    active === cat
-                      ? 'bg-navy-800 text-white'
-                      : 'bg-steel-100 text-steel-600 hover:bg-steel-200'
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="eyebrow text-safety-600">Portfolio</p>
+            <h2 className="mt-3 text-3xl font-bold text-navy-900 md:text-4xl">
+              Selected Project Work
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-steel-600">
+              Mechanical, refrigeration, and fabrication packages delivered for public infrastructure,
+              energy, marine, and institutional clients.
+            </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((project) => (
-              <Link
-                key={project.slug}
-                to={`/projects/${project.slug}`}
-                className="group flex flex-col overflow-hidden rounded-xl border border-steel-200 bg-white transition-all hover:shadow-xl"
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-2">
+            {FILTERS.map((sector) => (
+              <button
+                key={sector}
+                onClick={() => setActive(sector)}
+                className={`whitespace-nowrap rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
+                  active === sector
+                    ? 'border-navy-800 bg-navy-800 text-white'
+                    : 'border-steel-200 bg-white text-steel-600 hover:border-steel-300 hover:bg-steel-100'
+                }`}
               >
-                <div className="relative aspect-video overflow-hidden bg-steel-200">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <span className={`absolute top-4 left-4 rounded-full px-3 py-1 text-xs font-semibold ${CATEGORY_COLORS[project.category]}`}>
-                    {project.category}
-                  </span>
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-safety-600">{project.industry}</p>
-                  <h3 className="mt-2 text-lg font-bold text-navy-800 group-hover:text-navy-600 transition-colors">{project.title}</h3>
-                  <p className="mt-1 text-sm text-steel-500">{project.client} · {project.location}</p>
-                  <p className="mt-3 text-sm text-steel-600 flex-1">{project.summary}</p>
-                  <span className="btn-ghost mt-4">
-                    View Project
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </span>
-                </div>
-              </Link>
+                {sector}
+              </button>
+            ))}
+          </div>
+
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
             ))}
           </div>
         </div>
       </section>
+
 
       <CTABanner
         title="Have a Project You'd Like to Discuss?"
