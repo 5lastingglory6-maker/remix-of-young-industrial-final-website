@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ImageIcon } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
+import santaAsset from '@/assets/santa-musgravetown.jpg.asset.json';
 
 const STATS = [
   { num: '2020', label: 'Earliest confirmed sponsorship on record' },
