@@ -232,10 +232,10 @@ function IndustrialCommercialServices() {
         title="Featured Industrial Projects"
         bg="bg-steel-50"
         slugs={[
-          'dartmouth-cold-storage',
-          'pulp-mill-pipe-spooling',
-          'fishing-vessel-refrigeration',
-          'offshore-platform-fabrication',
+          'north-atlantic-refinery',
+          'quinlan-processing-facility',
+          'paradise-twin-arena',
+          'labrador-ready-mix-muskrat-falls',
         ]}
         columns={4}
       />

@@ -206,7 +206,7 @@ function MunicipalWaterAndSewer() {
         eyebrow="Related Projects"
         title="Projects in This Sector"
         bg="bg-white"
-        slugs={['municipal-water-pump-station', 'mining-pump-rebuild', 'pulp-mill-pipe-spooling']}
+        slugs={['paradise-twin-arena', 'eastern-health-burin', 'municipal-water-pump-station']}
       />
 
       <GallerySection

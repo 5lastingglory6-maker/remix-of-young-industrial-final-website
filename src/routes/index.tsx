@@ -91,10 +91,10 @@ function Home() {
         title="Featured Projects Across Our Services"
         columns={4}
         slugs={[
-          'dartmouth-cold-storage',
-          'pulp-mill-pipe-spooling',
-          'fishing-vessel-refrigeration',
-          'offshore-platform-fabrication',
+          'paradise-twin-arena',
+          'kkv-bull-arm-batch-plant',
+          'quinlan-processing-facility',
+          'north-atlantic-refinery',
         ]}
       />
 

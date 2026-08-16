@@ -206,7 +206,7 @@ function OilAndGas() {
         eyebrow="Related Projects"
         title="Projects in This Sector"
         bg="bg-white"
-        slugs={['offshore-platform-fabrication', 'dartmouth-cold-storage', 'mining-pump-rebuild']}
+        slugs={['north-atlantic-refinery', 'kkv-bull-arm-site-service', 'offshore-platform-fabrication']}
       />
 
       <GallerySection

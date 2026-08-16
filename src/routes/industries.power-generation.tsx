@@ -206,7 +206,7 @@ function PowerGeneration() {
         eyebrow="Related Projects"
         title="Projects in This Sector"
         bg="bg-white"
-        slugs={['power-generation-cooling-skid', 'dartmouth-cold-storage', 'mining-pump-rebuild']}
+        slugs={['labrador-ready-mix-muskrat-falls', 'kkv-bull-arm-batch-plant', 'power-generation-cooling-skid']}
       />
 
       <GallerySection
