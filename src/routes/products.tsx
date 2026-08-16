@@ -21,7 +21,7 @@ const CATEGORIES = [
   },
   {
     title: 'Pumps & Pump Rebuilding',
-    desc: 'New industrial pumps and complete in-shop rebuild services to keep your fluid systems moving. Our rebuild program restores worn pumps to reliable working condition and extends the life of your equipment.',
+    desc: 'New Cornell pumps and complete in-shop rebuild services to keep your fluid systems moving. Our rebuild program restores worn pumps to reliable working condition and extends the life of your equipment.',
     img: cornellAsset.url,
   },
 ];
