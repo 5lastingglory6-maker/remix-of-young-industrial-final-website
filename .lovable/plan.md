@@ -1,29 +1,33 @@
-# Typography Consolidation: Archivo + Inter
+# Add Real Company Projects
 
-Reduce the site from four typefaces to two, sitewide.
+Bring the company's real projects into the site alongside the existing ones, with the real projects always shown first.
 
-## Goal
+## What will change
 
-- Everything currently set in **Oswald** becomes **Archivo**
-- Everything currently set in **IBM Plex Mono** becomes **Inter**
-- Inter stays as the body font; Archivo becomes the single display/heading face
+### 1. Project data
+- Add the real projects you send into the shared project list, each flagged as a featured/real project.
+- Keep all 10 existing projects — nothing is removed.
+- Real projects sort first everywhere; existing ones follow in their current order.
 
-Result: the main site and the Residential & Offices page share one typographic system (Archivo for headings/display, Inter for everything else).
+### 2. Projects page (`/projects`)
+- Below the banner, rebuild the listing using the first HTML layout you send as inspiration, translated into the site's approved palette (navy, steel, safety-orange as accent only) and typography (Archivo headings, Inter body).
+- Real projects occupy the top of the grid.
 
-## What changes visually
+### 3. Individual project page (`/projects/{slug}`)
+- Rebuild the detail layout following the second HTML you send, again reskinned to the site's design system.
+- Fields rendered adapt to what each project actually has, so no empty sections.
 
-- All headings (h1–h5) across every page render in Archivo instead of the condensed Oswald.
-- On the Residential & Offices page, the small uppercase monospace labels — eyebrows, ticker text, nameplate rows, stat/brand pills, footer column headings, testimonial attributions — switch to Inter. They keep their existing size, uppercase styling, and letter-spacing so the layout rhythm holds; only the letterforms change.
-- Archivo is heavier and wider than Oswald, so heading lines will be slightly wider. Heading tracking is reviewed after the swap so long headlines don't wrap differently on mobile.
+### 4. Every other project surface
+- Service pages, industry pages, and any home/section project blocks: real projects first, then existing ones fill remaining slots.
 
-## Technical details
+## Content approach
+Your supplied text is the source. Where a field needs shortening for a card or summary, it gets condensed from your copy rather than invented — the essence and specifics stay intact.
 
-1. `src/styles.css` — change `--font-heading` to `Archivo, Inter, system-ui, sans-serif`. `--font-sans` (Inter) stays as-is.
-2. `src/styles/youngs.css` — repoint `--font-mono` to the Inter stack. `--font-display` already resolves to Archivo and stays. The many `font-family:var(--font-mono)` rules then inherit the change with no per-rule edits.
-3. `src/routes/__root.tsx` — replace Oswald with Archivo in the Google Fonts `<link>`, keeping the weights the headings need (500/700/800/900) plus the existing Inter weights.
-4. `src/routes/residential-offices.tsx` — drop `IBM+Plex+Mono` from that route's Google Fonts `<link>`; keep Archivo and Inter. Since Archivo now loads at root, this route's link is simplified to avoid a duplicate request.
-5. Sweep for any component using an Oswald or mono utility class directly, and update those to the shared tokens.
+## Technical notes
+- `src/data/site.ts`: extend the `Project` type with a `featured`/`isReal` flag and a shared ordering helper so every consumer sorts identically.
+- `src/components/ProjectsSection.tsx`, `src/routes/projects.index.tsx`, `src/routes/projects.$slug.tsx`: consume the ordering helper; layouts updated per the reference HTML.
+- Images: any project photos you provide get registered as project assets; otherwise existing stock imagery is reused.
+- Each new detail page keeps its own `head()` metadata (title, description, og tags).
 
-## Verification
-
-Render the homepage plus the Residential & Offices page at desktop and mobile widths, confirm no Oswald or IBM Plex Mono remains in computed styles, and check that headings and uppercase labels still fit their containers.
+## Next step
+Send the project content and the two HTML layout files, and I'll implement against them.
