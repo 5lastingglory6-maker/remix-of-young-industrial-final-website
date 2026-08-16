@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ImageIcon } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
+import santaAsset from '@/assets/santa-musgravetown.jpg.asset.json';
 
 const STATS = [
   { num: '2020', label: 'Earliest confirmed sponsorship on record' },
@@ -84,14 +85,22 @@ export default function CommunitySection() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-2xl bg-navy-950 px-8 py-12 text-center">
-          <h3 className="text-2xl font-bold text-white md:text-3xl">
-            This is what"local" actually looks like.
-          </h3>
-          <p className="mx-auto mt-4 max-w-2xl text-navy-100">
-            Not a slogan on a truck — a name that keeps showing up on sponsor lists, thank-you posts,
-            and hole signs across Newfoundland &amp; Labrador, year after year, cause after cause.
-          </p>
+        <div className="relative mt-12 overflow-hidden rounded-2xl text-center">
+          <img
+            src={santaAsset.url}
+            alt="Young's Industrial truck in the Musgravetown Santa Claus parade"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-navy-950/75" />
+          <div className="relative z-10 px-8 py-12 md:py-16">
+            <h3 className="text-xl font-bold text-white md:text-2xl lg:text-3xl">
+              This is what "local" actually looks like.
+            </h3>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-navy-100 md:text-base">
+              Not a slogan on a truck — a name that keeps showing up on sponsor lists, thank-you posts,
+              and hole signs across Newfoundland &amp; Labrador, year after year, cause after cause.
+            </p>
+          </div>
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
