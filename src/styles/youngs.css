@@ -1,17 +1,17 @@
 /* Ported Young's Industrial residential page styles, scoped to .youngs */
 :root{
-    --frost:#F5F8F9;
-    --frost-dim:#EAF0F2;
+    --frost:#F7F9FA;
+    --frost-dim:#EEF1F3;
     --white:#FFFFFF;
-    --graphite:#172230;
-    --graphite-soft:#2A3947;
-    --fjord:#0F5C86;
-    --fjord-deep:#0B4666;
-    --ember:#DD7A2E;
-    --ember-deep:#A85A17;
-    --ice:#B9E4EC;
-    --slate:#5B6B7C;
-    --line:rgba(23,34,48,0.10);
+    --graphite:#143A6B;
+    --graphite-soft:#2A3441;
+    --fjord:#006FB7;
+    --fjord-deep:#1C62A2;
+    --ember:#006FB7;
+    --ember-deep:#1C62A2;
+    --ice:#BCDFF4;
+    --slate:#6F7A85;
+    --line:rgba(20,58,107,0.10);
 
     --font-display:'Archivo', 'Arial Narrow', Arial, sans-serif;
     --font-body:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -236,12 +236,12 @@
 .youngs .gallery-item__cap{ padding:14px 16px; }
 .youngs .gallery-item__cap .cat{ font-family:var(--font-mono); font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ember-deep); }
 .youngs .gallery-item__cap .name{ font-weight:700; margin-top:4px; font-size:.92rem; }
-.youngs .art-1{ background:linear-gradient(135deg,#0F5C86,#172230); }
-.youngs .art-2{ background:linear-gradient(135deg,#DD7A2E,#A85A17); }
-.youngs .art-3{ background:linear-gradient(135deg,#2A3947,#0B4666); }
-.youngs .art-4{ background:linear-gradient(135deg,#5B6B7C,#172230); }
-.youngs .art-5{ background:linear-gradient(135deg,#0B4666,#DD7A2E); }
-.youngs .art-6{ background:linear-gradient(135deg,#172230,#0F5C86); }
+.youngs .art-1{ background:linear-gradient(135deg,#006FB7,#0B1E45); }
+.youngs .art-2{ background:linear-gradient(135deg,#006FB7,#1C62A2); }
+.youngs .art-3{ background:linear-gradient(135deg,#2A3441,#143A6B); }
+.youngs .art-4{ background:linear-gradient(135deg,#6F7A85,#0B1E45); }
+.youngs .art-5{ background:linear-gradient(135deg,#143A6B,#006FB7); }
+.youngs .art-6{ background:linear-gradient(135deg,#0B1E45,#006FB7); }
 .youngs /* ---------- Testimonials ---------- */
   .testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
 @media (max-width:860px){
