@@ -24,7 +24,8 @@ The reference site is entirely blue: its "safety" scale is blue, not orange. Thi
    - `--ember` / `--ember-deep` -> the blue accent (replaces orange)
    - `--frost` / `--frost-dim` -> the new steel off-whites
    - `--graphite` / `--slate` -> new steel darks
-3. **No layout, copy, font or spacing changes** — colours only, as requested. Banner/hero sections keep their current structure.
+3. **Banners — limited colour adoption** — banner and hero sections may take the new palette for their tint/gradient colours (including the hardcoded orange glow `#fb5c11` in the CTA banner, which becomes the new blue accent), but **overlay opacity values stay exactly as they are** (e.g. `opacity-10`, `opacity-5`, `from-navy-950/75`, `/45` all unchanged). Only the colour, never the transparency.
+4. **No layout, copy, font or spacing changes** — colours only, as requested.
 
 ## Technical notes
 
