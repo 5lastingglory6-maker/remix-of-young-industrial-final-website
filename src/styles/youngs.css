@@ -1,17 +1,17 @@
 /* Ported Young's Industrial residential page styles, scoped to .youngs */
 :root{
-    --frost:#F5F8F9;
-    --frost-dim:#EAF0F2;
+    --frost:#F7F9FA;
+    --frost-dim:#EEF1F3;
     --white:#FFFFFF;
-    --graphite:#172230;
-    --graphite-soft:#2A3947;
-    --fjord:#0F5C86;
-    --fjord-deep:#0B4666;
-    --ember:#DD7A2E;
-    --ember-deep:#A85A17;
-    --ice:#B9E4EC;
-    --slate:#5B6B7C;
-    --line:rgba(23,34,48,0.10);
+    --graphite:#143A6B;
+    --graphite-soft:#2A3441;
+    --fjord:#006FB7;
+    --fjord-deep:#1C62A2;
+    --ember:#006FB7;
+    --ember-deep:#1C62A2;
+    --ice:#BCDFF4;
+    --slate:#6F7A85;
+    --line:rgba(20,58,107,0.10);
 
     --font-display:'Archivo', 'Arial Narrow', Arial, sans-serif;
     --font-body:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
