@@ -148,39 +148,39 @@
  * --------------------------------------------------------------- */
 
 @theme {
-  --color-navy-50: #e6eef7;
-  --color-navy-100: #cfe0f0;
-  --color-navy-200: #99bfe0;
-  --color-navy-300: #4580b2;
-  --color-navy-400: #1470b1;
-  --color-navy-500: #025599;
-  --color-navy-600: #024680;
-  --color-navy-700: #023868;
-  --color-navy-800: #012a4f;
-  --color-navy-900: #011a33;
-  --color-navy-950: #00101f;
+  --color-navy-50: #eef5fb;
+  --color-navy-100: #d8e9f6;
+  --color-navy-200: #b3d4ec;
+  --color-navy-300: #85b7da;
+  --color-navy-400: #4e8dbf;
+  --color-navy-500: #006fb7;
+  --color-navy-600: #1c62a2;
+  --color-navy-700: #2a5b9d;
+  --color-navy-800: #143a6b;
+  --color-navy-900: #0b1e45;
+  --color-navy-950: #071531;
 
-  --color-steel-50: #f6f7f9;
-  --color-steel-100: #eceef2;
-  --color-steel-200: #d4d9e1;
-  --color-steel-300: #aeb7c7;
-  --color-steel-400: #828fa6;
-  --color-steel-500: #647091;
-  --color-steel-600: #4e5978;
-  --color-steel-700: #404862;
-  --color-steel-800: #373e53;
-  --color-steel-900: #2f3447;
+  --color-steel-50: #f7f9fa;
+  --color-steel-100: #eef1f3;
+  --color-steel-200: #dfe2e4;
+  --color-steel-300: #c2c8cd;
+  --color-steel-400: #98a1aa;
+  --color-steel-500: #6f7a85;
+  --color-steel-600: #545e69;
+  --color-steel-700: #3a3a3a;
+  --color-steel-800: #2a3441;
+  --color-steel-900: #1f2733;
 
-  --color-safety-50: #fff6ed;
-  --color-safety-100: #ffe9d4;
-  --color-safety-200: #ffcfa8;
-  --color-safety-300: #ffac70;
-  --color-safety-400: #fb923c;
-  --color-safety-500: #f97316;
-  --color-safety-600: #ea580c;
-  --color-safety-700: #c2410c;
-  --color-safety-800: #9a3412;
-  --color-safety-900: #7c2d12;
+  --color-safety-50: #f1f8fd;
+  --color-safety-100: #ddeefa;
+  --color-safety-200: #bcdff4;
+  --color-safety-300: #93cbec;
+  --color-safety-400: #65b5e4;
+  --color-safety-500: #006fb7;
+  --color-safety-600: #1c62a2;
+  --color-safety-700: #2a5b9d;
+  --color-safety-800: #143a6b;
+  --color-safety-900: #0b1e45;
 
   --font-sans: Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   --font-heading: Archivo, 'Arial Narrow', Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
