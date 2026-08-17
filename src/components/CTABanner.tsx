@@ -10,7 +10,7 @@ export default function CTABanner({
 }) {
   return (
     <section className="relative overflow-hidden bg-navy-800">
-      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 80% 20%, #fb5c11 0%, transparent 50%)' }} />
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 80% 20%, #006fb7 0%, transparent 50%)' }} />
       <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'linear-gradient(135deg, transparent 40%, rgba(255,255,255,0.08) 50%, transparent 60%)' }} />
       <div className="container-8xl relative py-16 md:py-20">
         <div className="flex flex-col items-center gap-8 text-center md:flex-row md:justify-between md:text-left">
