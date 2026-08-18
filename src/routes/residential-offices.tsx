@@ -99,7 +99,7 @@ function ResidentialOffices() {
       <main id="ro-main">
 
         <div className="banner">
-          <img src={heroImg} alt="Young's Industrial technicians installing a heat pump on a Newfoundland home" width={1280} height={912} />
+          <img src={heroImg} alt="Young's Industrial technicians installing a heat pump on a Newfoundland home" width={1200} height={900} />
           <div className="banner__tag">Heat pump installs across Newfoundland &amp; Labrador</div>
         </div>
 
