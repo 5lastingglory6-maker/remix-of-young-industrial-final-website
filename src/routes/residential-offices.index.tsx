@@ -19,7 +19,7 @@ const gFishPlant = gFishPlantAsset.url;
 const gSolar = gSolarAsset.url;
 const gThermal = gThermalAsset.url;
 
-export const Route = createFileRoute("/residential-offices")({
+export const Route = createFileRoute("/residential-offices/")({
   component: ResidentialOffices,
   head: () => ({
     meta: [
