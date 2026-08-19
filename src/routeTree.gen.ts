@@ -107,9 +107,9 @@ const ResidentialOfficesIndexRoute = ResidentialOfficesIndexRouteImport.update({
 } as any)
 const ResidentialOfficesOilToElectricRebateRoute =
   ResidentialOfficesOilToElectricRebateRouteImport.update({
-    id: '/residential-offices/oil-to-electric-rebate',
-    path: '/residential-offices/oil-to-electric-rebate',
-    getParentRoute: () => rootRouteImport,
+    id: '/oil-to-electric-rebate',
+    path: '/oil-to-electric-rebate',
+    getParentRoute: () => ResidentialOfficesRoute,
   } as any)
 const ServicesCustomSkidsRoute = ServicesCustomSkidsRouteImport.update({
   id: '/services/custom-skids',
@@ -299,7 +299,6 @@ export interface RootRouteChildren {
   IndustriesPowerGenerationRoute: typeof IndustriesPowerGenerationRoute
   IndustriesPulpAndPaperRoute: typeof IndustriesPulpAndPaperRoute
   ProjectsSlugRoute: typeof ProjectsSlugRoute
-  ResidentialOfficesOilToElectricRebateRoute: typeof ResidentialOfficesOilToElectricRebateRoute
   ServicesCustomSkidsRoute: typeof ServicesCustomSkidsRoute
   ServicesFabricationRoute: typeof ServicesFabricationRoute
   ServicesMarineRefrigerationRoute: typeof ServicesMarineRefrigerationRoute
@@ -412,10 +411,10 @@ declare module '@tanstack/react-router' {
     }
     '/residential-offices/oil-to-electric-rebate': {
       id: '/residential-offices/oil-to-electric-rebate'
-      path: '/residential-offices/oil-to-electric-rebate'
+      path: '/oil-to-electric-rebate'
       fullPath: '/residential-offices/oil-to-electric-rebate'
       preLoaderRoute: typeof ResidentialOfficesOilToElectricRebateRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof ResidentialOfficesRoute
     }
     '/services/custom-skids': {
       id: '/services/custom-skids'
@@ -475,8 +474,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndustriesPowerGenerationRoute: IndustriesPowerGenerationRoute,
   IndustriesPulpAndPaperRoute: IndustriesPulpAndPaperRoute,
   ProjectsSlugRoute: ProjectsSlugRoute,
-  ResidentialOfficesOilToElectricRebateRoute:
-    ResidentialOfficesOilToElectricRebateRoute,
   ServicesCustomSkidsRoute: ServicesCustomSkidsRoute,
   ServicesFabricationRoute: ServicesFabricationRoute,
   ServicesMarineRefrigerationRoute: ServicesMarineRefrigerationRoute,
