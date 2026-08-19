@@ -19,7 +19,7 @@ const gFishPlant = gFishPlantAsset.url;
 const gSolar = gSolarAsset.url;
 const gThermal = gThermalAsset.url;
 
-export const Route = createFileRoute("/residential-offices")({
+export const Route = createFileRoute("/residential-offices/")({
   component: ResidentialOffices,
   head: () => ({
     meta: [
@@ -245,7 +245,7 @@ function ResidentialOffices() {
               </ul>
       
               <div className="cta-row" style={{ marginTop:"28px" }}>
-                <a className="btn btn-primary" href="#quote">See If I Qualify</a>
+                <a className="btn btn-primary" href="/residential-offices/oil-to-electric-rebate">See If I Qualify</a>
               </div>
               <p className="fine-print">Rebate amounts and eligibility are set by takeCHARGE, Newfoundland Power and NL Hydro and may change. We'll confirm current details when we quote your job.</p>
             </div>
