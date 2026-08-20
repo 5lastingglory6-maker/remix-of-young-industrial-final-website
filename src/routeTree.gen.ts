@@ -23,6 +23,7 @@ import { Route as IndustriesPulpAndPaperRouteImport } from './routes/industries.
 import { Route as ProjectsIndexRouteImport } from './routes/projects.index'
 import { Route as ProjectsSlugRouteImport } from './routes/projects.$slug'
 import { Route as ResidentialOfficesIndexRouteImport } from './routes/residential-offices.index'
+import { Route as ResidentialOfficesIndustrialVacuumServicesRouteImport } from './routes/residential-offices.industrial-vacuum-services'
 import { Route as ResidentialOfficesOilToElectricRebateRouteImport } from './routes/residential-offices.oil-to-electric-rebate'
 import { Route as ServicesCustomSkidsRouteImport } from './routes/services.custom-skids'
 import { Route as ServicesFabricationRouteImport } from './routes/services.fabrication'
@@ -105,6 +106,12 @@ const ResidentialOfficesIndexRoute = ResidentialOfficesIndexRouteImport.update({
   path: '/residential-offices/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ResidentialOfficesIndustrialVacuumServicesRoute =
+  ResidentialOfficesIndustrialVacuumServicesRouteImport.update({
+    id: '/residential-offices/industrial-vacuum-services',
+    path: '/residential-offices/industrial-vacuum-services',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ResidentialOfficesOilToElectricRebateRoute =
   ResidentialOfficesOilToElectricRebateRouteImport.update({
     id: '/residential-offices/oil-to-electric-rebate',
@@ -157,6 +164,7 @@ export interface FileRoutesByFullPath {
   '/industries/power-generation': typeof IndustriesPowerGenerationRoute
   '/industries/pulp-and-paper': typeof IndustriesPulpAndPaperRoute
   '/projects/$slug': typeof ProjectsSlugRoute
+  '/residential-offices/industrial-vacuum-services': typeof ResidentialOfficesIndustrialVacuumServicesRoute
   '/residential-offices/oil-to-electric-rebate': typeof ResidentialOfficesOilToElectricRebateRoute
   '/services/custom-skids': typeof ServicesCustomSkidsRoute
   '/services/fabrication': typeof ServicesFabricationRoute
@@ -180,6 +188,7 @@ export interface FileRoutesByTo {
   '/industries/power-generation': typeof IndustriesPowerGenerationRoute
   '/industries/pulp-and-paper': typeof IndustriesPulpAndPaperRoute
   '/projects/$slug': typeof ProjectsSlugRoute
+  '/residential-offices/industrial-vacuum-services': typeof ResidentialOfficesIndustrialVacuumServicesRoute
   '/residential-offices/oil-to-electric-rebate': typeof ResidentialOfficesOilToElectricRebateRoute
   '/services/custom-skids': typeof ServicesCustomSkidsRoute
   '/services/fabrication': typeof ServicesFabricationRoute
@@ -204,6 +213,7 @@ export interface FileRoutesById {
   '/industries/power-generation': typeof IndustriesPowerGenerationRoute
   '/industries/pulp-and-paper': typeof IndustriesPulpAndPaperRoute
   '/projects/$slug': typeof ProjectsSlugRoute
+  '/residential-offices/industrial-vacuum-services': typeof ResidentialOfficesIndustrialVacuumServicesRoute
   '/residential-offices/oil-to-electric-rebate': typeof ResidentialOfficesOilToElectricRebateRoute
   '/services/custom-skids': typeof ServicesCustomSkidsRoute
   '/services/fabrication': typeof ServicesFabricationRoute
@@ -229,6 +239,7 @@ export interface FileRouteTypes {
     | '/industries/power-generation'
     | '/industries/pulp-and-paper'
     | '/projects/$slug'
+    | '/residential-offices/industrial-vacuum-services'
     | '/residential-offices/oil-to-electric-rebate'
     | '/services/custom-skids'
     | '/services/fabrication'
@@ -252,6 +263,7 @@ export interface FileRouteTypes {
     | '/industries/power-generation'
     | '/industries/pulp-and-paper'
     | '/projects/$slug'
+    | '/residential-offices/industrial-vacuum-services'
     | '/residential-offices/oil-to-electric-rebate'
     | '/services/custom-skids'
     | '/services/fabrication'
@@ -275,6 +287,7 @@ export interface FileRouteTypes {
     | '/industries/power-generation'
     | '/industries/pulp-and-paper'
     | '/projects/$slug'
+    | '/residential-offices/industrial-vacuum-services'
     | '/residential-offices/oil-to-electric-rebate'
     | '/services/custom-skids'
     | '/services/fabrication'
@@ -299,6 +312,7 @@ export interface RootRouteChildren {
   IndustriesPowerGenerationRoute: typeof IndustriesPowerGenerationRoute
   IndustriesPulpAndPaperRoute: typeof IndustriesPulpAndPaperRoute
   ProjectsSlugRoute: typeof ProjectsSlugRoute
+  ResidentialOfficesIndustrialVacuumServicesRoute: typeof ResidentialOfficesIndustrialVacuumServicesRoute
   ResidentialOfficesOilToElectricRebateRoute: typeof ResidentialOfficesOilToElectricRebateRoute
   ServicesCustomSkidsRoute: typeof ServicesCustomSkidsRoute
   ServicesFabricationRoute: typeof ServicesFabricationRoute
@@ -410,6 +424,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ResidentialOfficesIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/residential-offices/industrial-vacuum-services': {
+      id: '/residential-offices/industrial-vacuum-services'
+      path: '/residential-offices/industrial-vacuum-services'
+      fullPath: '/residential-offices/industrial-vacuum-services'
+      preLoaderRoute: typeof ResidentialOfficesIndustrialVacuumServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/residential-offices/oil-to-electric-rebate': {
       id: '/residential-offices/oil-to-electric-rebate'
       path: '/residential-offices/oil-to-electric-rebate'
@@ -475,6 +496,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndustriesPowerGenerationRoute: IndustriesPowerGenerationRoute,
   IndustriesPulpAndPaperRoute: IndustriesPulpAndPaperRoute,
   ProjectsSlugRoute: ProjectsSlugRoute,
+  ResidentialOfficesIndustrialVacuumServicesRoute:
+    ResidentialOfficesIndustrialVacuumServicesRoute,
   ResidentialOfficesOilToElectricRebateRoute:
     ResidentialOfficesOilToElectricRebateRoute,
   ServicesCustomSkidsRoute: ServicesCustomSkidsRoute,
