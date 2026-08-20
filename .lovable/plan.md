@@ -19,7 +19,7 @@ Emoji markers from the blueprint are dropped in favour of the site's existing ic
 
 ## Images
 
-Generate one new hero image (vacuum truck on an industrial job site) and one supporting photo for the legacy section, saved as project assets. No existing images are replaced.
+Generate a new hero image (vacuum truck on an industrial job site) and card/section photos for the five service cards and the legacy section, saved as project assets. No existing images are replaced.
 
 ## Technical notes
 
