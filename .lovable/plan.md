@@ -5,7 +5,7 @@ Build a new page at `/residential-offices/industrial-vacuum-services` using the 
 ## Sections (in the blueprint's order)
 
 1. Banner + hero — background image of a vacuum truck job site, heading "Industrial Vacuum & Environmental Waste Services" with the high-capacity liquid extraction subhead, plus CTA buttons (Request a Vac Service Quote, Call (709) 467-9712).
-2. Comprehensive Core Services — card grid (3-up desktop, 2-up tablet, 1-up mobile) with the five services and their descriptions: Industrial Sump & Tank Cleaning, Catch Basin & Storm Drain Cleansing, Bulk Liquid Waste Hauling, Septic Tank Pumping, Emergency Sewer Tank Backup Service.
+2. Comprehensive Core Services — card grid in the same style as the "What We Fabricate" cards on `/services/fabrication`: photo top with a navy gradient, a blue icon chip in the corner, bold title, description, and a "Show more" toggle when the copy is longer than the card. Three-up on desktop, two-up on tablet, one-up on mobile, with the five services: Industrial Sump & Tank Cleaning, Catch Basin & Storm Drain Cleansing, Bulk Liquid Waste Hauling, Septic Tank Pumping, Emergency Sewer Tank Backup Service.
 3. Fleet Assets & Technical Capabilities — "Built for Scale. Engineered for Compliance." intro paragraph plus the three capability blocks (High-CFM Vacuum Infrastructure, Large-Capacity Tankers, Full Environmental Tracking).
 4. The Young's Legacy — two-column section with a photo and the two legacy paragraphs.
 5. Direct Dispatch — high-contrast navy block: "Project-Critical Vacuum Issue?" heading, urgency paragraph, primary "Request a Vac Service Quote" button linking to the corporate quote form, and the three Immediate Field Booking Lines as tappable `tel:` links plus the dispatch email as a `mailto:` link.
