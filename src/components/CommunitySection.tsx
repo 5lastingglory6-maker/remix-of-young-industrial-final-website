@@ -9,9 +9,9 @@ import bellesAsset from '@/assets/belles-with-balls-concert-ovarian-cancer.png.a
 import concertAsset from '@/assets/setting-up-for-a-musgravetown-concert-weekend.png.asset.json';
 
 const STATS = [
-  { num: '2020', label: 'Earliest confirmed sponsorship on record' },
-  { num: '4', label: 'Different causes supported' },
-  { num: '6+', label: 'Community partners & events' },
+  { num: '2018', label: 'Earliest confirmed sponsorship on record' },
+  { num: '7', label: 'Different causes supported' },
+  { num: '12', label: 'Community partners & events' },
 ];
 
 const STORIES: {
