@@ -8,6 +8,17 @@ import StatsSection from '@/components/StatsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import CareersBanner from '@/components/CareersBanner';
 import heroRefinery from "@/assets/hero-industrial-refinery.png.asset.json";
+import vacLogo from "@/assets/young-vac-logo.jpg.asset.json";
+
+const VAC_HIGHLIGHTS = [
+  'Septic & holding tank pumping',
+  'Grease traps, sumps & catch basins',
+  'Drain & sewer cleaning, video inspection',
+  'Industrial cleanouts & bulk liquid hauling',
+  '3 vacuum trucks, dispatched within 24 hours',
+  'Certified, fully documented disposal',
+];
+
 
 const TESTIMONIALS = [
   { quote:"Young's delivered our cold storage build ahead of schedule and the system has run flawlessly through our busiest season. Their in-house fabrication made all the difference.", name: 'David MacDonald', role: 'Operations Manager, Atlantic Cold Logistics' },
@@ -60,6 +71,51 @@ function Home() {
 
       {/* Company stats */}
       <StatsSection />
+
+
+      {/* Vacuum truck services */}
+      <section className="section-pad bg-steel-50" aria-labelledby="vacHeading">
+        <div className="container-8xl">
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            <div className="overflow-hidden rounded-2xl border border-steel-200 bg-white p-4 shadow-sm">
+              <img
+                src={vacLogo.url}
+                alt="Young's Vac Service — sewer tanks, garage drains, oil and water vacuum truck services"
+                className="mx-auto h-auto w-full max-w-md object-contain"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <p className="eyebrow mb-3">Vacuum Truck Services</p>
+              <h2 id="vacHeading" className="text-3xl font-bold text-navy-800 md:text-4xl">
+                One Call for Tanks, Drains, Sumps &amp; Liquid Waste
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-steel-600">
+                Young's Vac Service handles the mess so you don't have to — for homes, businesses and
+                industrial sites across Atlantic Canada. From routine septic and holding tank pumping to
+                grease traps, catch basins, blocked drains, wash bay pits and industrial tank cleanouts,
+                our vacuum trucks pump, clean, haul and dispose of liquid waste with certified,
+                fully documented disposal.
+              </p>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                {VAC_HIGHLIGHTS.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-steel-700">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-safety-500" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <Link to="/services/vacuum-truck-services" className="btn-primary">
+                  Explore Vacuum Truck Services
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Testimonials */}
       <section className="section-pad bg-white">
