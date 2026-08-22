@@ -70,6 +70,8 @@ function Home() {
       <SplitSection />
 
       {/* Company stats */}
+      <StatsSection />
+
 
       {/* Vacuum truck services */}
       <section className="section-pad bg-steel-50" aria-labelledby="vacHeading">
