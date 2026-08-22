@@ -408,14 +408,14 @@ function VacuumTruckServices() {
             title="We Handle the Mess So You Don't Have To"
             description="Young's Industrial provides vacuum truck and related cleaning services for a wide range of residential, commercial, and industrial needs."
           />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
             {CORE_SERVICES.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="h-full rounded-xl border border-steel-200 bg-white p-7 shadow-sm transition-shadow hover:shadow-lg">
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-safety-100 text-safety-700">
+              <div key={title} className="h-full rounded-xl border border-steel-100 bg-white p-4 shadow-sm transition-shadow hover:shadow-lg sm:border-steel-200 sm:p-7">
+                <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-safety-100 text-safety-700 sm:mb-5 sm:h-12 sm:w-12">
                   <Icon className="h-6 w-6" />
                 </div>
-                <h3 className="mb-2.5 text-lg font-bold text-navy-800">{title}</h3>
-                <p className="text-steel-600">{desc}</p>
+                <h3 className="mb-1.5 text-sm font-bold text-navy-800 sm:mb-2.5 sm:text-lg">{title}</h3>
+                <p className="text-xs text-steel-600 sm:text-sm">{desc}</p>
               </div>
             ))}
           </div>
