@@ -1,19 +1,40 @@
-Replace the selected Community card with a new Belles with Balls NL story
+# Full-page screenshots of every page
 
-1. Edit the STORIES array in `src/components/CommunitySection.tsx`.
-2. Replace the existing entry titled `Supporting Critical Infrastructure Work` / tagged `Industry Support` with a new entry for `Belles with Balls NL`.
-3. Use the same card structure as the surrounding entries: title, tags, badge, body, placeholder, and gradient.
-4. Tag it `Healthcare & Wellness` to match the cause category.
-5. Badge it `Silver Sponsor`.
-6. Write the body in the established narrative style — state the sponsorship role, describe the event/cause, include the September 19 date and Belles with Balls NL, and close with a sentence about local commitment.
-7. Do not include the event URL in the body; keep the card text-only in the same style as the existing cards.
-8. Keep the existing placeholder gradient approach (no new images generated), using a navy-steel gradient consistent with the section.
+Capture one PNG per page — each image is the entire page top to bottom, never split into parts. Individual project detail pages (`/projects/:slug`) are skipped; the Projects listing page is captured in full.
 
-Proposed new card text:
+## Pages (22)
 
-- title: `Belles with Balls NL`
-- tags: `['Healthcare & Wellness']`
-- badge: `Silver Sponsor`
-- body: `Young's Industrial stepped up as a Silver Sponsor for the inaugural The Lady Ball St. John’s in Newfoundland and Labrador, backing local initiatives for ovarian cancer research, education, and patient support. Held on September 19 with Belles with Balls NL, the evening brings together fashion, fun, and entertainment in support of women living with and at risk of ovarian cancer across the province and Canada. Standing alongside other prominent regional brands, the sponsorship shows their support going beyond industrial work — putting their name behind a vital women's health cause in the community.`
-- placeholder: `Photo of: The Lady Ball event, sponsor signage, or Belles with Balls NL gathering`
-- gradient: `from-navy-700 to-navy-950`
+1. `/` — Home
+2. `/about`
+3. `/contact`
+4. `/products`
+5. `/projects`
+6. `/industrial-commercial-services`
+7. `/industries/food-processing`
+8. `/industries/ice-making`
+9. `/industries/municipal-water-sewer`
+10. `/industries/oil-and-gas`
+11. `/industries/power-generation`
+12. `/industries/pulp-and-paper`
+13. `/residential-offices`
+14. `/residential-offices/industrial-vacuum-services`
+15. `/residential-offices/oil-to-electric-rebate`
+16. `/services/custom-skids`
+17. `/services/fabrication`
+18. `/services/marine-refrigeration`
+19. `/services/offshore-oil-gas`
+20. `/services/refrigeration`
+21. `/services/service-maintenance`
+22. `/services/vacuum-truck-services`
+
+## How it works
+
+- Desktop width 1440px, taken against the running preview.
+- For each page: load, scroll through it once so every lazy-loaded image and scroll-triggered animation is resolved, scroll back to top, then capture the whole document height in a single tall image.
+- Sticky header stays fixed at the top of the shot only once (no repeating bar mid-page).
+- Files land in `/mnt/documents/page-screenshots/` named after the route, e.g. `home.png`, `about.png`, `services-vacuum-truck-services.png`.
+
+## Notes
+
+- No code or content changes — this is capture only.
+- Very long pages (Vacuum Truck Services, Home) produce tall PNGs; that is expected since each page stays one image.
