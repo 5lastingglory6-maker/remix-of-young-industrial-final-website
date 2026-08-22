@@ -33,7 +33,7 @@ const CORE_SERVICES: { icon: typeof Droplets; title: string; desc: string }[] = 
     desc: "Reliable emptying and waste removal for holding tanks of different sizes and applications.",
   },
   {
-    icon: Pipeline,
+    icon: Waves,
     title: "Drain & Sewer Cleaning",
     desc: "Clear blockages, grease, buildup, debris, and other materials that restrict flow.",
   },
