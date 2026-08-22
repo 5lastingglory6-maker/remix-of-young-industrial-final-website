@@ -16,6 +16,7 @@ export const NAV_LINKS = [
     { label: 'Industrial Vacuum Services', to: '/residential-offices/industrial-vacuum-services' },
   ]},
   { label: 'Industrial & Commercial Services', to: '/industrial-commercial-services', children: [
+    { label: 'Vacuum Truck Services', to: '/services/vacuum-truck-services' },
     { label: 'Fabrication Services', to: '/services/fabrication', children: [
       { label: 'Pulp & Paper', to: '/industries/pulp-and-paper' },
       { label: 'Power Generation', to: '/industries/power-generation' },
