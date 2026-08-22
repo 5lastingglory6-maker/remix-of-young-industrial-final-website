@@ -107,7 +107,7 @@ function Home() {
               </ul>
               <div className="mt-8">
                 <Link to="/services/vacuum-truck-services" className="btn-primary">
-                  Explore Vacuum Truck Services
+                  VACUUM TRUCK SERVICES
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
