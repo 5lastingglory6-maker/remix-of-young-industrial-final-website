@@ -524,7 +524,7 @@ function VacuumTruckServices() {
         <div className="container-8xl grid items-center gap-12 lg:grid-cols-2 lg:gap-[70px]">
           <img
             src={industrialAsset.url}
-            alt="Industrial vacuum and cooling equipment at an industrial facility"
+            alt="Young's Industrial vacuum truck at a snowy work site"
             loading="lazy"
             width={1200}
             height={900}
