@@ -54,8 +54,8 @@ function About() {
             </div>
             <ImagePlaceholder
               src={aboutUsAsset.url}
-              alt="Young's Industrial technician charging a refrigeration skid in the fabrication shop"
-              className="aspect-[4/3] shadow-lg"
+              alt="Young's Industrial technician servicing a rooftop condenser unit"
+              className="aspect-square shadow-lg"
             />
 
           </div>
