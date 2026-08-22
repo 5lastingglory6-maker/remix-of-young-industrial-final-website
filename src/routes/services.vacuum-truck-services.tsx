@@ -9,7 +9,7 @@ import sumpAsset from "@/assets/vac-sump-tank.jpg.asset.json";
 import catchBasinAsset from "@/assets/vac-catch-basin.jpg.asset.json";
 import bulkAsset from "@/assets/vac-bulk-hauling.jpg.asset.json";
 import emergencyAsset from "@/assets/vac-emergency-callout.jpg.asset.json";
-import industrialAsset from "@/assets/p-industrial-cooling-compressor-2.jpg.asset.json";
+import industrialAsset from "@/assets/vac-industrial-truck.jpg.asset.json";
 
 const SITE_URL = "https://id-preview--505c4137-b717-4e3e-b23f-a53d695b8ee2.lovable.app";
 
@@ -524,7 +524,7 @@ function VacuumTruckServices() {
         <div className="container-8xl grid items-center gap-12 lg:grid-cols-2 lg:gap-[70px]">
           <img
             src={industrialAsset.url}
-            alt="Industrial vacuum and cooling equipment at an industrial facility"
+            alt="Young's Industrial vacuum truck at a snowy work site"
             loading="lazy"
             width={1200}
             height={900}
