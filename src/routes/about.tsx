@@ -1,7 +1,8 @@
 import { createFileRoute } from"@tanstack/react-router";
 import { Award, BadgeCheck, ShieldCheck, MapPin, Target, Handshake } from 'lucide-react';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
-import aboutUsAsset from '@/assets/about-us-technician.jpg.asset.json';
+import aboutUsAsset from '@/assets/about-rooftop-tech.jpg.asset.json';
+import commitmentAsset from '@/assets/about-daikin-vrv.jpg.asset.json';
 
 import TrustBar from '@/components/TrustBar';
 import CTABanner from '@/components/CTABanner';
