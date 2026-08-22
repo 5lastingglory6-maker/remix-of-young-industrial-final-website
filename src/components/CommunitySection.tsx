@@ -1,7 +1,12 @@
 import { useState } from 'react';
-import { ImageIcon } from 'lucide-react';
 import SectionHeading from '@/components/SectionHeading';
 import santaAsset from '@/assets/santa-musgravetown.jpg.asset.json';
+import tideAsset from '@/assets/turning-the-tide-marine-industry-awards.png.asset.json';
+import golfAsset from '@/assets/discovery-health-care-foundation-george-martin-memorial-golf-tournament.png.asset.json';
+import appleAsset from '@/assets/port-blandford-applefest.png.asset.json';
+import rocksAsset from '@/assets/young-s-industrial-was-a-gold-sponsor-of-the-on-the-rocks-music-festival..png.asset.json';
+import bellesAsset from '@/assets/belles-with-balls-concert-ovarian-cancer.png.asset.json';
+import concertAsset from '@/assets/setting-up-for-a-musgravetown-concert-weekend.png.asset.json';
 
 const STATS = [
   { num: '2020', label: 'Earliest confirmed sponsorship on record' },
