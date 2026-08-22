@@ -68,9 +68,9 @@ function About() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div className="order-2 lg:order-1">
               <ImagePlaceholder
-                src="https://images.pexels.com/photos/2244746/pexels-photo-2244746.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                alt="Certified welders at work"
-                className="aspect-[4/3] shadow-lg"
+                src={commitmentAsset.url}
+                alt="Young's Industrial technician charging a Daikin VRV system on site"
+                className="aspect-square shadow-lg"
               />
             </div>
             <div className="order-1 lg:order-2">
