@@ -50,11 +50,12 @@ const STORIES: {
     gradient: 'from-navy-900 to-safety-600',
   },
   {
-    title: 'Supporting Critical Infrastructure Work',
-    tags: ['Industry Support'],
-    body:"When EcoAxis needed support completing a transmission line project across sensitive Newfoundland and Labrador terrain, they publicly credited Young's Industrial for their services on the job. The project used ground protection mats to create safe, stable access across wet and environmentally sensitive ground — the kind of behind-the-scenes infrastructure work that rarely gets public attention, but that other trades notice and remember. It's a reminder that their reputation isn't only built at festivals and fundraisers; it's also built on other businesses trusting them to show up and deliver on working job sites.",
-    placeholder: 'Photo of: project site, ground protection mats in use, or crew on location',
-    gradient: 'from-steel-600 to-navy-950',
+    title: 'Belles with Balls NL',
+    tags: ['Healthcare & Wellness'],
+    badge: 'Silver Sponsor',
+    body:"Young's Industrial stepped up as a Silver Sponsor for the inaugural The Lady Ball St. John's in Newfoundland and Labrador, backing local initiatives for ovarian cancer research, education, and patient support. Held on September 19 with Belles with Balls NL, the evening brings together fashion, fun, and entertainment in support of women living with and at risk of ovarian cancer across the province and Canada. Standing alongside other prominent regional brands, the sponsorship shows their support going beyond industrial work — putting their name behind a vital women's health cause in the community.",
+    placeholder: 'Photo of: The Lady Ball event, sponsor signage, or Belles with Balls NL gathering',
+    gradient: 'from-navy-700 to-navy-950',
   },
   {
     title: 'Setting Up for a Musgravetown Concert Weekend',
