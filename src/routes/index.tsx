@@ -8,6 +8,17 @@ import StatsSection from '@/components/StatsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import CareersBanner from '@/components/CareersBanner';
 import heroRefinery from "@/assets/hero-industrial-refinery.png.asset.json";
+import vacLogo from "@/assets/young-vac-logo.jpg.asset.json";
+
+const VAC_HIGHLIGHTS = [
+  'Septic & holding tank pumping',
+  'Grease traps, sumps & catch basins',
+  'Drain & sewer cleaning, video inspection',
+  'Industrial cleanouts & bulk liquid hauling',
+  '3 vacuum trucks, dispatched within 24 hours',
+  'Certified, fully documented disposal',
+];
+
 
 const TESTIMONIALS = [
   { quote:"Young's delivered our cold storage build ahead of schedule and the system has run flawlessly through our busiest season. Their in-house fabrication made all the difference.", name: 'David MacDonald', role: 'Operations Manager, Atlantic Cold Logistics' },
