@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Link } from "@/components/SiteLink";
-import { ArrowRight, ChevronDown, Phone, Truck, Gauge, Clock, MapPin, Award, ShieldCheck, Droplets, Home, Siren, Pipeline, Search, Factory, Utensils, Car, ClipboardCheck, CheckCircle } from "lucide-react";
+import { ArrowRight, ChevronDown, Phone, Truck, Gauge, Clock, MapPin, Award, ShieldCheck, Droplets, Home, Siren, Waves, Search, Factory, Utensils, Car, ClipboardCheck, CheckCircle } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import heroAsset from "@/assets/vac-hero-truck.jpg.asset.json";
 import septicAsset from "@/assets/vac-septic-pumping.jpg.asset.json";

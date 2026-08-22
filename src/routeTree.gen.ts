@@ -31,6 +31,7 @@ import { Route as ServicesMarineRefrigerationRouteImport } from './routes/servic
 import { Route as ServicesOffshoreOilGasRouteImport } from './routes/services.offshore-oil-gas'
 import { Route as ServicesRefrigerationRouteImport } from './routes/services.refrigeration'
 import { Route as ServicesServiceMaintenanceRouteImport } from './routes/services.service-maintenance'
+import { Route as ServicesVacuumTruckServicesRouteImport } from './routes/services.vacuum-truck-services'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -150,6 +151,12 @@ const ServicesServiceMaintenanceRoute =
     path: '/services/service-maintenance',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ServicesVacuumTruckServicesRoute =
+  ServicesVacuumTruckServicesRouteImport.update({
+    id: '/services/vacuum-truck-services',
+    path: '/services/vacuum-truck-services',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -172,6 +179,7 @@ export interface FileRoutesByFullPath {
   '/services/offshore-oil-gas': typeof ServicesOffshoreOilGasRoute
   '/services/refrigeration': typeof ServicesRefrigerationRoute
   '/services/service-maintenance': typeof ServicesServiceMaintenanceRoute
+  '/services/vacuum-truck-services': typeof ServicesVacuumTruckServicesRoute
   '/projects/': typeof ProjectsIndexRoute
   '/residential-offices/': typeof ResidentialOfficesIndexRoute
 }
@@ -196,6 +204,7 @@ export interface FileRoutesByTo {
   '/services/offshore-oil-gas': typeof ServicesOffshoreOilGasRoute
   '/services/refrigeration': typeof ServicesRefrigerationRoute
   '/services/service-maintenance': typeof ServicesServiceMaintenanceRoute
+  '/services/vacuum-truck-services': typeof ServicesVacuumTruckServicesRoute
   '/projects': typeof ProjectsIndexRoute
   '/residential-offices': typeof ResidentialOfficesIndexRoute
 }
@@ -221,6 +230,7 @@ export interface FileRoutesById {
   '/services/offshore-oil-gas': typeof ServicesOffshoreOilGasRoute
   '/services/refrigeration': typeof ServicesRefrigerationRoute
   '/services/service-maintenance': typeof ServicesServiceMaintenanceRoute
+  '/services/vacuum-truck-services': typeof ServicesVacuumTruckServicesRoute
   '/projects/': typeof ProjectsIndexRoute
   '/residential-offices/': typeof ResidentialOfficesIndexRoute
 }
@@ -247,6 +257,7 @@ export interface FileRouteTypes {
     | '/services/offshore-oil-gas'
     | '/services/refrigeration'
     | '/services/service-maintenance'
+    | '/services/vacuum-truck-services'
     | '/projects/'
     | '/residential-offices/'
   fileRoutesByTo: FileRoutesByTo
@@ -271,6 +282,7 @@ export interface FileRouteTypes {
     | '/services/offshore-oil-gas'
     | '/services/refrigeration'
     | '/services/service-maintenance'
+    | '/services/vacuum-truck-services'
     | '/projects'
     | '/residential-offices'
   id:
@@ -295,6 +307,7 @@ export interface FileRouteTypes {
     | '/services/offshore-oil-gas'
     | '/services/refrigeration'
     | '/services/service-maintenance'
+    | '/services/vacuum-truck-services'
     | '/projects/'
     | '/residential-offices/'
   fileRoutesById: FileRoutesById
@@ -320,6 +333,7 @@ export interface RootRouteChildren {
   ServicesOffshoreOilGasRoute: typeof ServicesOffshoreOilGasRoute
   ServicesRefrigerationRoute: typeof ServicesRefrigerationRoute
   ServicesServiceMaintenanceRoute: typeof ServicesServiceMaintenanceRoute
+  ServicesVacuumTruckServicesRoute: typeof ServicesVacuumTruckServicesRoute
   ProjectsIndexRoute: typeof ProjectsIndexRoute
   ResidentialOfficesIndexRoute: typeof ResidentialOfficesIndexRoute
 }
@@ -480,6 +494,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicesServiceMaintenanceRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/vacuum-truck-services': {
+      id: '/services/vacuum-truck-services'
+      path: '/services/vacuum-truck-services'
+      fullPath: '/services/vacuum-truck-services'
+      preLoaderRoute: typeof ServicesVacuumTruckServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -506,6 +527,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServicesOffshoreOilGasRoute: ServicesOffshoreOilGasRoute,
   ServicesRefrigerationRoute: ServicesRefrigerationRoute,
   ServicesServiceMaintenanceRoute: ServicesServiceMaintenanceRoute,
+  ServicesVacuumTruckServicesRoute: ServicesVacuumTruckServicesRoute,
   ProjectsIndexRoute: ProjectsIndexRoute,
   ResidentialOfficesIndexRoute: ResidentialOfficesIndexRoute,
 }
