@@ -120,7 +120,7 @@ const COMMERCIAL: { title: string; text: string }[] = [
 const INDUSTRIAL_CAPABILITIES = [
   "Large-volume waste removal",
   "Industrial vacuuming",
-  "Sums and pits",
+  "Sumps and pits",
   "Liquid waste removal",
   "Drain and sewer cleaning",
   "Construction support",
