@@ -10,7 +10,7 @@ import customRefrigerationAsset from '@/assets/p-custom-refrigeration-packages.j
 import marineRefrigerationAsset from '@/assets/p-marine-refrigeration.jpg.asset.json';
 import plateFreezerAsset from '@/assets/gen-plate-freezer.jpg.asset.json';
 import industrialCoolingAsset from '@/assets/p-industrial-cooling-compressor-2.jpg.asset.json';
-import thermalAsset from '@/assets/g-thermal.jpg.asset.json';
+import machineRoomAsset from '@/assets/gen-machine-room.jpg.asset.json';
 
 const APPROACH_POINTS = [
   'Ammonia, CO₂, glycol, and HFC/HFO capability',
