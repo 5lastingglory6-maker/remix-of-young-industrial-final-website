@@ -23,8 +23,7 @@ Refactor the **Core Services** section on `/services/vacuum-truck-services` so t
 - Image: propose reusing the `vac-industrial-truck.jpg` asset (or `vac-hero-truck.jpg` if preferred) with a rounded frame and object-cover.
 
 ### 3. Core service cards become a connected grid
-- Remove the `SectionHeading` wrapper from above the cards (now lives in the new text section).
-- Remove the `h3` card titles from each `CORE_SERVICES` card so each card shows only the icon and the short description.
+- Remove the `SectionHeading` wrapper from above the cards (now lives in the new text-with-image section). Do not add a new heading for the cards themselves; each card keeps its existing `h3` title.
 - Tighten the spacing between the new text section and the cards (e.g., `mt-8` or `mt-10`) so they read as one continuous section rather than two separate sections.
 - Keep the mobile 2-column responsive card layout already implemented.
 
