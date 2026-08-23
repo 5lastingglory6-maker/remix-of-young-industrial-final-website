@@ -203,6 +203,7 @@ function IndustrialCommercialServices() {
           </div>
         </div>
       </section>
+      <ComeByChanceServices />
 
       {/* Testimonials */}
       <section className="section-pad bg-white">
