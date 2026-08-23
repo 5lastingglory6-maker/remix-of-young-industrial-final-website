@@ -363,15 +363,6 @@ function VacuumTruckServices() {
           <h1 className="max-w-4xl text-4xl font-bold leading-tight text-white md:text-6xl">
             Professional Vacuum Truck Services for Homes, Businesses &amp; Industrial Sites
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-navy-100">
-            When waste, wastewater, sludge, grease, or debris needs to be removed, you need more than a truck. You need
-            the right equipment, a capable team, and a service that gets the problem handled properly.
-          </p>
-          <p className="mt-4 max-w-2xl text-lg text-navy-100">
-            Young Industrial provides vacuum truck and related cleaning services for residential, commercial, and industrial
-            needs. From septic tanks and holding tanks to blocked drains, grease traps, sumps, catch basins, and difficult
-            waste removal jobs, we help keep your property, facility, and operations running as they should.
-          </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <Link to="/contact" className="btn-primary">
               Request Service
@@ -403,12 +394,35 @@ function VacuumTruckServices() {
       {/* CORE SERVICES */}
       <section className="section-pad bg-white" id="services">
         <div className="container-8xl">
-          <SectionHeading
-            eyebrow="Comprehensive Core Services"
-            title="We Handle the Mess So You Don't Have To"
-            description="Young's Industrial provides vacuum truck and related cleaning services for a wide range of residential, commercial, and industrial needs."
-          />
-          <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
+          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-[70px]">
+            <div>
+              <p className="eyebrow mb-3">Comprehensive Core Services</p>
+              <h2 className="text-3xl font-bold text-navy-800 md:text-4xl">
+                We Handle the Mess So You Don't Have To
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-steel-600">
+                Young's Industrial provides vacuum truck and related cleaning services for a wide range of residential, commercial, and industrial needs.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-steel-600">
+                When waste, wastewater, sludge, grease, or debris needs to be removed, you need more than a truck. You need
+                the right equipment, a capable team, and a service that gets the problem handled properly.
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-steel-600">
+                Young Industrial provides vacuum truck and related cleaning services for residential, commercial, and industrial
+                needs. From septic tanks and holding tanks to blocked drains, grease traps, sumps, catch basins, and difficult
+                waste removal jobs, we help keep your property, facility, and operations running as they should.
+              </p>
+            </div>
+            <img
+              src={industrialAsset.url}
+              alt="Young's Industrial vacuum truck at a snowy work site"
+              loading="lazy"
+              width={1200}
+              height={900}
+              className="h-[380px] w-full rounded-2xl object-cover lg:h-[520px]"
+            />
+          </div>
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
             {CORE_SERVICES.map(({ icon: Icon, title, desc }) => (
               <div key={title} className="h-full rounded-xl border border-steel-100 bg-white p-4 shadow-sm transition-shadow hover:shadow-lg sm:border-steel-200 sm:p-7">
                 <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-safety-100 text-safety-700 sm:mb-5 sm:h-12 sm:w-12">
