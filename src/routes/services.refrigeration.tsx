@@ -31,7 +31,7 @@ const MARKETS: { icon: LucideIcon; title: string; desc: string; img: string }[] 
   { icon: Ship, title: 'Fishing Vessels & Seafood Processing Facilities', desc: 'RSW, hold cooling, and plant refrigeration systems for fishing vessels and land-based seafood processing operations.', img: marineRefrigerationAsset.url },
   { icon: Snowflake, title: 'Industrial Refrigeration, Cold Storage & Blast Freezing', desc: 'Custom process cooling, food production, low-temperature storage warehouses, and high-capacity blast freeze systems for heavy industrial applications.', img: plateFreezerAsset.url },
   { icon: Building2, title: 'Arena & Recreational Ice', desc: 'Ammonia ice plants with heat reclaim systems designed for arenas, rinks, and recreational ice facilities.', img: industrialCoolingAsset.url },
-  { icon: Flame, title: 'Heat Reclamation, Exchangers & Pipe Insulation', desc: 'Recover waste heat from refrigeration cycles, plus ASME-compliant pressure vessels, heat exchangers, and industrial pipe insulation.', img: thermalAsset.url },
+  { icon: Flame, title: 'Heat Reclamation, Exchangers & Pipe Insulation', desc: 'Recover waste heat from refrigeration cycles, plus ASME-compliant pressure vessels, heat exchangers, and industrial pipe insulation.', img: machineRoomAsset.url },
 ];
 
 const SYSTEMS = [
