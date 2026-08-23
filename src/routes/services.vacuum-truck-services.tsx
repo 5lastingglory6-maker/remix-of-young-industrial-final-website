@@ -363,15 +363,6 @@ function VacuumTruckServices() {
           <h1 className="max-w-4xl text-4xl font-bold leading-tight text-white md:text-6xl">
             Professional Vacuum Truck Services for Homes, Businesses &amp; Industrial Sites
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-navy-100">
-            When waste, wastewater, sludge, grease, or debris needs to be removed, you need more than a truck. You need
-            the right equipment, a capable team, and a service that gets the problem handled properly.
-          </p>
-          <p className="mt-4 max-w-2xl text-lg text-navy-100">
-            Young Industrial provides vacuum truck and related cleaning services for residential, commercial, and industrial
-            needs. From septic tanks and holding tanks to blocked drains, grease traps, sumps, catch basins, and difficult
-            waste removal jobs, we help keep your property, facility, and operations running as they should.
-          </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <Link to="/contact" className="btn-primary">
               Request Service
