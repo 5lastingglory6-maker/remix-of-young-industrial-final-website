@@ -2,6 +2,7 @@ import { createFileRoute } from"@tanstack/react-router";
 import { Link } from '@/components/SiteLink';
 import { ArrowRight, Quote } from 'lucide-react';
 import CTABanner from '@/components/CTABanner';
+import ComeByChanceServices from '@/components/ComeByChanceServices';
 import SectionHeading from '@/components/SectionHeading';
 import SplitSection from '@/components/SplitSection';
 import StatsSection from '@/components/StatsSection';
@@ -116,6 +117,7 @@ function Home() {
         </div>
       </section>
 
+      <ComeByChanceServices />
 
       {/* Testimonials */}
       <section className="section-pad bg-white">
