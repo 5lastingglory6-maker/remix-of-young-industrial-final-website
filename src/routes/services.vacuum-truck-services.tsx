@@ -349,7 +349,7 @@ function VacuumTruckServices() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden">
+      <section className="relative h-[360px] overflow-hidden md:h-[400px] lg:h-[480px]">
         <img
           src={heroAsset.url}
           alt="Young's Industrial vacuum truck on a job site"
@@ -358,23 +358,25 @@ function VacuumTruckServices() {
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950/93 to-navy-950/72" />
-        <div className="container-8xl relative py-24 md:py-28">
-          <p className="eyebrow mb-5 text-safety-300">Vacuum Truck Division</p>
-          <h1 className="max-w-4xl text-4xl font-bold leading-tight text-white md:text-6xl">
-            Professional Vacuum Truck Services for Homes, Businesses &amp; Industrial Sites
-          </h1>
-          <div className="mt-9 flex flex-wrap gap-4">
-            <Link to="/contact" className="btn-primary">
-              Request Service
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-            <a
-              href="tel:+17094679712"
-              className="inline-flex items-center justify-center gap-2 rounded-md border border-white/35 px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-white/10"
-            >
-              <Phone className="h-4 w-4" />
-              Call Now
-            </a>
+        <div className="container-8xl relative flex h-full items-end pb-10 md:pb-12">
+          <div className="max-w-4xl pb-2">
+            <p className="eyebrow mb-3 text-safety-300 md:mb-5">Vacuum Truck Division</p>
+            <h1 className="text-3xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+              Professional Vacuum Truck Services for Homes, Businesses &amp; Industrial Sites
+            </h1>
+            <div className="mt-6 flex flex-wrap gap-4 md:mt-8">
+              <Link to="/contact" className="btn-primary">
+                Request Service
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+              <a
+                href="tel:+17094679712"
+                className="inline-flex items-center justify-center gap-2 rounded-md border border-white/35 px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-white/10"
+              >
+                <Phone className="h-4 w-4" />
+                Call Now
+              </a>
+            </div>
           </div>
         </div>
       </section>
