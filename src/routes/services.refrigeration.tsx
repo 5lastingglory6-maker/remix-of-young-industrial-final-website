@@ -6,6 +6,11 @@ import ImagePlaceholder from '@/components/ImagePlaceholder';
 import ImageFrame from '@/components/ImageFrame';
 import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
+import customRefrigerationAsset from '@/assets/p-custom-refrigeration-packages.jpg.asset.json';
+import marineRefrigerationAsset from '@/assets/p-marine-refrigeration.jpg.asset.json';
+import plateFreezerAsset from '@/assets/gen-plate-freezer.jpg.asset.json';
+import industrialCoolingAsset from '@/assets/p-industrial-cooling-compressor-2.jpg.asset.json';
+import machineRoomAsset from '@/assets/gen-machine-room.jpg.asset.json';
 
 const APPROACH_POINTS = [
   'Ammonia, CO₂, glycol, and HFC/HFO capability',
@@ -23,10 +28,10 @@ const PRODUCT_LINES = [
 ];
 
 const MARKETS: { icon: LucideIcon; title: string; desc: string; img: string }[] = [
-  { icon: Ship, title: 'Fishing Vessels & Seafood Processing Facilities', desc: 'RSW, hold cooling, and plant refrigeration systems for fishing vessels and land-based seafood processing operations.', img: 'https://images.pexels.com/photos/18419622/pexels-photo-18419622.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { icon: Snowflake, title: 'Industrial Refrigeration, Cold Storage & Blast Freezing', desc: 'Custom process cooling, food production, low-temperature storage warehouses, and high-capacity blast freeze systems for heavy industrial applications.', img: 'https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { icon: Building2, title: 'Arena & Recreational Ice', desc: 'Ammonia ice plants with heat reclaim systems designed for arenas, rinks, and recreational ice facilities.', img: 'https://images.pexels.com/photos/1895012/pexels-photo-1895012.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { icon: Flame, title: 'Heat Reclamation, Exchangers & Pipe Insulation', desc: 'Recover waste heat from refrigeration cycles, plus ASME-compliant pressure vessels, heat exchangers, and industrial pipe insulation.', img: 'https://images.pexels.com/photos/37913513/pexels-photo-37913513.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { icon: Ship, title: 'Fishing Vessels & Seafood Processing Facilities', desc: 'RSW, hold cooling, and plant refrigeration systems for fishing vessels and land-based seafood processing operations.', img: marineRefrigerationAsset.url },
+  { icon: Snowflake, title: 'Industrial Refrigeration, Cold Storage & Blast Freezing', desc: 'Custom process cooling, food production, low-temperature storage warehouses, and high-capacity blast freeze systems for heavy industrial applications.', img: plateFreezerAsset.url },
+  { icon: Building2, title: 'Arena & Recreational Ice', desc: 'Ammonia ice plants with heat reclaim systems designed for arenas, rinks, and recreational ice facilities.', img: industrialCoolingAsset.url },
+  { icon: Flame, title: 'Heat Reclamation, Exchangers & Pipe Insulation', desc: 'Recover waste heat from refrigeration cycles, plus ASME-compliant pressure vessels, heat exchangers, and industrial pipe insulation.', img: machineRoomAsset.url },
 ];
 
 const SYSTEMS = [
@@ -90,8 +95,8 @@ function RefrigerationServices() {
               </p>
             </div>
             <ImagePlaceholder
-              src="https://images.pexels.com/photos/2098605/pexels-photo-2098605.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Refrigeration system installation"
+              src={customRefrigerationAsset.url}
+              alt="Custom industrial refrigeration package"
               className="aspect-[4/3] shadow-lg"
             />
           </div>
