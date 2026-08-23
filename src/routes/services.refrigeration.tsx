@@ -95,8 +95,8 @@ function RefrigerationServices() {
               </p>
             </div>
             <ImagePlaceholder
-              src="https://images.pexels.com/photos/2098605/pexels-photo-2098605.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              alt="Refrigeration system installation"
+              src={customRefrigerationAsset.url}
+              alt="Custom industrial refrigeration package"
               className="aspect-[4/3] shadow-lg"
             />
           </div>
