@@ -116,6 +116,7 @@ function Home() {
         </div>
       </section>
 
+      <ComeByChanceServices />
 
       {/* Testimonials */}
       <section className="section-pad bg-white">
