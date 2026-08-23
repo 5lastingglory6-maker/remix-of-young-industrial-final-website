@@ -35,7 +35,7 @@ Reuse the look of the Equipment & Systems chip grid on the Refrigeration page: w
 
 Differences requested:
 - Full width (spans the container, no side-by-side image column).
-- Text centered inside each chip; the dot sits above the label so centering reads cleanly.
+- Text centered inside each chip; the dot sits to the left of the first line of text, like a normal bulleted line.
 - Mobile: smaller padding and text so 2-3 chips fit per row.
 
 Responsive grid: `grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5`, gaps `gap-2 sm:gap-3`, chip padding `px-2 py-2.5 sm:px-4 sm:py-3`, label `text-[11px] sm:text-sm`.
