@@ -4,6 +4,7 @@ import { ArrowRight, Factory, Snowflake, Wrench, Cog, Quote, CheckCircle2 } from
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import TrustBar from '@/components/TrustBar';
 import CTABanner from '@/components/CTABanner';
+import ComeByChanceServices from '@/components/ComeByChanceServices';
 import SectionHeading from '@/components/SectionHeading';
 import ProjectsSection from '@/components/ProjectsSection';
 import heroFacility from"@/assets/hero-facility.png.asset.json";
