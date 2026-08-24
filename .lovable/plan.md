@@ -12,14 +12,15 @@ Two related issues, both caused by banner height being set in fixed pixels (or v
 ### 1. HVAC page banner
 Replace the pixel-clamp height with a true aspect ratio so the banner keeps the same width:height proportion at every screen size and zoom. Keep the desktop proportion as the reference ratio (roughly 21:9 wide-strip), and let the tag chip and its text scale down on smaller screens rather than the banner growing.
 
-### 2. Site-wide hero banners
-Convert every fixed-pixel hero height to an aspect-ratio-driven height, using the current desktop appearance as the reference ratio per banner type:
+### 2. Site-wide hero banners — one consistent ratio, no pixel heights
+Remove every fixed-pixel hero height and replace it with a single shared aspect ratio so all banners look the same shape and proportion on every page and every device:
 
-- Tall page hero (home, industrial & commercial): wide cinematic ratio, capped so it never exceeds a sensible max height on ultra-wide monitors.
-- Mid page heroes (about, projects, products, services, industries): a single shared ratio so all interior pages look consistent.
-- Short banner (contact): shorter shared ratio.
+- All full-width page banners (home, industrial & commercial, about, projects, products, services, industries, contact, vacuum truck, HVAC): `21/9` cinematic ratio on desktop/tablet, widening slightly (`16/9`) on narrow phones so the image still reads.
+- A `max-h` guard keeps ultra-wide monitors from producing an oversized hero.
+- Inline/section images that already use a ratio (`aspect-[4/3]`, `aspect-[16/10]`) stay as they are; the pixel-height ones (`h-[380px] lg:h-[520px]` on the vacuum-truck and rebate pages) switch to `aspect-[4/3]`.
 
 Each hero keeps `object-cover` on the image plus its existing overlay gradients, opacity, text and CTAs — only the height mechanism changes.
+
 
 ### 3. Keep text readable at the smaller heights
 Because a ratio-based banner is shorter on narrow screens, hero headline / eyebrow / CTA type steps down at mobile breakpoints so nothing clips or overflows the shorter frame. No copy changes.
