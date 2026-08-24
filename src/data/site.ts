@@ -15,8 +15,8 @@ export const NAV_LINKS = [
     { label: 'Oil to Electric Rebate', to: '/residential-offices/oil-to-electric-rebate' },
     { label: 'Industrial Vacuum Services', to: '/residential-offices/industrial-vacuum-services' },
   ]},
+  { label: 'Vacuum Truck', to: '/services/vacuum-truck-services' },
   { label: 'INDUSTRIAL & COMMERCIAL\u00a0', to: '/industrial-commercial-services', children: [
-    { label: 'Vacuum Truck Services', to: '/services/vacuum-truck-services' },
     { label: 'Fabrication Services', to: '/services/fabrication', children: [
       { label: 'Pulp & Paper', to: '/industries/pulp-and-paper' },
       { label: 'Power Generation', to: '/industries/power-generation' },
