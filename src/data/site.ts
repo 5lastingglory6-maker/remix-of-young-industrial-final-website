@@ -11,11 +11,11 @@ export const COMPANY = {
 
 export const NAV_LINKS = [
   { label: 'About', to: '/about' },
-  { label: 'Offices & Residential Services', to: '/residential-offices', children: [
+  { label: '\u00a0HVAC\u00a0', to: '/residential-offices', children: [
     { label: 'Oil to Electric Rebate', to: '/residential-offices/oil-to-electric-rebate' },
     { label: 'Industrial Vacuum Services', to: '/residential-offices/industrial-vacuum-services' },
   ]},
-  { label: 'Industrial & Commercial Services', to: '/industrial-commercial-services', children: [
+  { label: 'INDUSTRIAL & COMMERCIAL\u00a0', to: '/industrial-commercial-services', children: [
     { label: 'Vacuum Truck Services', to: '/services/vacuum-truck-services' },
     { label: 'Fabrication Services', to: '/services/fabrication', children: [
       { label: 'Pulp & Paper', to: '/industries/pulp-and-paper' },
