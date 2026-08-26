@@ -159,7 +159,10 @@
 .youngs .services-grid{ grid-template-columns:repeat(2,1fr); }
 }
 @media (max-width:600px){
-.youngs .services-grid{ grid-template-columns:1fr; }
+.youngs .services-grid{ display:flex; grid-template-columns:none; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; margin-inline:calc(-1 * var(--gutter, 20px)); padding-inline:var(--gutter, 20px); padding-bottom:4px; scrollbar-width:none; }
+.youngs .services-grid::-webkit-scrollbar{ display:none; }
+.youngs .services-grid > .service-card{ flex:0 0 78%; scroll-snap-align:start; padding:20px; }
+.youngs .services-grid > .service-card:hover{ transform:none; box-shadow:none; }
 }
 .youngs .service-card{ background:var(--white); border:1px solid var(--line); border-radius:var(--radius); padding:28px; transition:transform .18s ease, box-shadow .18s ease; }
 .youngs .service-card:hover{ transform:translateY(-4px); box-shadow:0 20px 34px -20px rgba(23,34,48,.25); }
