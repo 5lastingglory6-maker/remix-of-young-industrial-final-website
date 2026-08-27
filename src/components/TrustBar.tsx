@@ -18,7 +18,7 @@ export default function TrustBar({ variant = 'light' }: { variant?: 'light' | 'd
   return (
     <div className={variant === 'dark' ? 'bg-navy-900' : 'bg-steel-50 border-y border-steel-200'}>
       <div className="container-8xl py-4 md:py-5">
-        <div className="grid grid-cols-2 items-start justify-items-start gap-x-2 gap-y-3 sm:gap-x-4 lg:grid-cols-4 lg:gap-4">
+        <div className="grid grid-cols-2 items-start justify-items-start gap-x-2 gap-y-3 sm:gap-x-4 lg:grid-cols-4 lg:items-center lg:justify-items-center lg:gap-4">
           {items.map((item) => {
             const Icon = ICONS[item.icon] ?? BadgeCheck;
             return (
