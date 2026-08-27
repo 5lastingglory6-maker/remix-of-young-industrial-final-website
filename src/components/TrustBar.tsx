@@ -22,7 +22,7 @@ export default function TrustBar({ variant = 'light' }: { variant?: 'light' | 'd
           {items.map((item) => {
             const Icon = ICONS[item.icon] ?? BadgeCheck;
             return (
-              <div key={item.label} className="flex w-full min-w-0 items-center justify-start gap-1.5 sm:gap-2">
+              <div key={item.label} className="flex w-full min-w-0 items-center justify-start gap-1.5 sm:gap-2 lg:justify-center">
                 <div className={`flex h-5 w-5 shrink-0 items-center justify-center rounded md:h-7 md:w-7 ${variant === 'dark' ? 'bg-navy-700' : 'bg-white border border-steel-200'}`}>
                   <Icon className={`h-2.5 w-2.5 md:h-3.5 md:w-3.5 ${variant === 'dark' ? 'text-safety-400' : 'text-safety-500'}`} />
                 </div>
