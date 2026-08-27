@@ -213,11 +213,11 @@ function IndustrialCommercialServices() {
             eyebrow="Client Testimonials"
             title="Trusted by Industry Leaders"
           />
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-12 -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 scrollbar-hide md:mx-0 md:grid md:grid-cols-3 md:gap-6">
             {TESTIMONIALS.map((t, i) => (
-              <div key={i} className="relative rounded-xl bg-steel-50 border border-steel-200 p-8">
-                <Quote className="h-10 w-10 text-safety-200" />
-                <p className="mt-4 text-steel-700 italic">"{t.quote}"</p>
+              <div key={i} className="relative w-[85vw] shrink-0 snap-start rounded-xl bg-steel-50 border border-steel-200 p-6 md:w-auto md:p-8">
+                <Quote className="h-8 w-8 text-safety-200 md:h-10 md:w-10" />
+                <p className="mt-4 text-sm text-steel-700 italic md:text-base">"{t.quote}"</p>
                 <div className="mt-6 pt-4 border-t border-steel-200">
                   <p className="font-semibold text-navy-800">{t.name}</p>
                   <p className="text-sm text-steel-500">{t.role}</p>

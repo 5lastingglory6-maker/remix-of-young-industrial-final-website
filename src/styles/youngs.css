@@ -248,7 +248,18 @@
 .youngs /* ---------- Testimonials ---------- */
   .testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
 @media (max-width:860px){
-.youngs .testi-grid{ grid-template-columns:1fr; }
+.youngs .testi-grid{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  grid-template-columns:none;
+}
+.youngs .testi-grid .testi-card{
+  flex:0 0 85vw;
+  scroll-snap-align:start;
+}
 }
 .youngs .testi-card{ background:var(--white); border:1px solid var(--line); border-radius:var(--radius); padding:26px; }
 .youngs .testi-card .stars{ display:flex; gap:3px; color:var(--ember); margin-bottom:14px; }
