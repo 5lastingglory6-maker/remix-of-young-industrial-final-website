@@ -13,7 +13,6 @@ export const NAV_LINKS = [
   { label: 'About', to: '/about' },
   { label: '\u00a0HVAC\u00a0', to: '/residential-offices', children: [
     { label: 'Oil to Electric Rebate', to: '/residential-offices/oil-to-electric-rebate' },
-    { label: 'Industrial Vacuum Services', to: '/residential-offices/industrial-vacuum-services' },
   ]},
   { label: 'Vacuum Truck', to: '/services/vacuum-truck-services' },
   { label: 'INDUSTRIAL & COMMERCIAL\u00a0', to: '/industrial-commercial-services', children: [
