@@ -246,7 +246,7 @@
 .youngs .art-5{ background:linear-gradient(135deg,#143A6B,#006FB7); }
 .youngs .art-6{ background:linear-gradient(135deg,#0B1E45,#006FB7); }
 .youngs /* ---------- Testimonials ---------- */
-  .testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.youngs .testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
 @media (max-width:860px){
 .youngs .testi-grid{
   display:flex;
@@ -255,10 +255,6 @@
   scroll-snap-type:x mandatory;
   -webkit-overflow-scrolling:touch;
   grid-template-columns:none;
-}
-.youngs .testi-grid .testi-card{
-  flex:0 0 85vw;
-  scroll-snap-align:start;
 }
 }
 .youngs .testi-card{ background:var(--white); border:1px solid var(--line); border-radius:var(--radius); padding:26px; }
