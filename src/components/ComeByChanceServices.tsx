@@ -31,19 +31,22 @@ export default function ComeByChanceServices() {
           eyebrow="Come By Chance Facility"
           title="In addition to the above at our Come By Chance location we offer the following"
         />
-        <div className="mt-10 sm:mt-12 grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4 xl:grid-cols-5">
-          {COME_BY_CHANCE_SERVICES.map((item) => (
-            <div
-              key={item}
-              className="flex items-start gap-2 rounded-lg border border-steel-200 bg-white px-2 py-2.5 sm:gap-3 sm:px-4 sm:py-3"
-            >
-              <div className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-safety-500" />
-              <span className="text-center text-[11px] font-medium leading-tight text-navy-700 sm:text-sm">
-                {item}
-              </span>
-            </div>
-          ))}
+        <div className="mt-10 sm:mt-12 -mx-4 overflow-x-auto px-4 scrollbar-hide sm:mx-0 sm:px-0">
+          <div className="grid grid-flow-col grid-rows-3 auto-cols-[minmax(220px,1fr)] gap-2 sm:auto-cols-[minmax(260px,1fr)] sm:gap-3">
+            {COME_BY_CHANCE_SERVICES.map((item) => (
+              <div
+                key={item}
+                className="flex h-full min-h-[64px] items-center gap-2 rounded-lg border border-steel-200 bg-white px-2 py-2.5 sm:gap-3 sm:px-4 sm:py-3"
+              >
+                <div className="h-2 w-2 shrink-0 rounded-full bg-safety-500" />
+                <span className="text-[11px] font-medium leading-tight text-navy-700 sm:text-sm">
+                  {item}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
+
       </div>
     </section>
   );
