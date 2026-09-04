@@ -384,8 +384,8 @@ function ResidentialOffices() {
               <h2>Sample of the feedback we're hearing</h2>
               
             </div>
-            <div className="testi-grid">
-              <div className="testi-card reveal">
+            <div className="testi-grid flex -mx-6 snap-x snap-mandatory gap-4 overflow-x-auto px-6 scrollbar-hide md:mx-0 md:grid md:grid-cols-3 md:gap-6">
+              <div className="testi-card reveal w-[75vw] shrink-0 snap-start md:w-auto">
                 <div className="stars" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                   <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -396,7 +396,7 @@ function ResidentialOffices() {
                 <p className="quote">Professional from the first call to the final walkthrough. They explained the rebate paperwork clearly and handled everything.</p>
                 <div className="who">Heat pump install — Clarenville area</div>
               </div>
-              <div className="testi-card reveal">
+              <div className="testi-card reveal w-[75vw] shrink-0 snap-start md:w-auto">
                 <div className="stars" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                   <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -407,7 +407,7 @@ function ResidentialOffices() {
                 <p className="quote">Good to know a crew that does the big industrial jobs is the same one showing up for a home service call. Knew exactly what they were doing.</p>
                 <div className="who">Electrical service call</div>
               </div>
-              <div className="testi-card reveal">
+              <div className="testi-card reveal w-[75vw] shrink-0 snap-start md:w-auto">
                 <div className="stars" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                   <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
