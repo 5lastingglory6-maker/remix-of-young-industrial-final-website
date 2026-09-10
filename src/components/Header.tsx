@@ -3,8 +3,7 @@ import { Link, NavLink } from '@/components/SiteLink';
 import { useRouterState } from '@tanstack/react-router';
 import { ChevronDown, Menu, Phone, Mail, X } from 'lucide-react';
 import { COMPANY, NAV_LINKS } from '@/data/site';
-import logoImg from"@/assets/logo-youngs.png.asset.json";
-
+const logoImg = '/logo-youngs.png';
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openGroups, setOpenGroups] = useState<Record<string, boolean>>({});
@@ -46,7 +45,7 @@ export default function Header() {
         <div className="mx-auto flex max-w-none items-center gap-4 px-3 py-4 lg:px-5">
           <Link to="/" className="flex shrink-0 items-center group">
             <img
-              src={logoImg.url}
+              src={logoImg}
               alt="Young's Industrial"
               className="h-12 w-auto object-contain"
             />

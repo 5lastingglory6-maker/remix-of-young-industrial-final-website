@@ -1,8 +1,7 @@
 import { Link } from '@/components/SiteLink';
 import { Facebook, Linkedin, MapPin, Phone, Mail, Snowflake, ArrowRight } from 'lucide-react';
 import { COMPANY } from '@/data/site';
-import logoImg from"@/assets/logo-youngs.png.asset.json";
-
+const logoImg = '/logo-youngs.png';
 export default function Footer() {
   const year = new Date().getFullYear();
   const navLinks = [
@@ -22,7 +21,7 @@ export default function Footer() {
           <div>
             <div className="mb-5 inline-block rounded-lg bg-white p-3">
               <img
-                src={logoImg.url}
+                src={logoImg}
                 alt="Young's Industrial"
                 className="h-12 w-auto object-contain"
               />

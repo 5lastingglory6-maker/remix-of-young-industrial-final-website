@@ -7,9 +7,8 @@ import CTABanner from '@/components/CTABanner';
 import ComeByChanceServices from '@/components/ComeByChanceServices';
 import SectionHeading from '@/components/SectionHeading';
 import ProjectsSection from '@/components/ProjectsSection';
-import heroFacility from"@/assets/hero-facility.png.asset.json";
-import heroRefinery from"@/assets/hero-industrial-refinery.png.asset.json";
-
+const heroFacility = '/hero-facility.png';
+const heroRefinery = '/hero-industrial-refinery.png';
 const CAPABILITIES = [
   {
     icon: Factory,
@@ -55,7 +54,7 @@ function IndustrialCommercialServices() {
       <section className="relative">
         <div className="relative h-[600px] md:h-[680px] overflow-hidden">
           <img
-            src={heroRefinery.url}
+            src={heroRefinery}
             alt="Young's Industrial service trucks at a refinery site"
             className="absolute inset-0 h-full w-full object-cover"
           />
@@ -195,7 +194,7 @@ function IndustrialCommercialServices() {
             </div>
             <div className="order-1 lg:order-2">
               <ImagePlaceholder
-                src={heroFacility.url}
+                src={heroFacility}
                 alt="Custom industrial refrigeration package"
                 className="aspect-square shadow-xl w-full"
               />

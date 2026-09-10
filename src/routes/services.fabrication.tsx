@@ -5,8 +5,7 @@ import { ArrowRight, Wrench, Layers, CheckCircle2, Ship, HardHat, ChevronDown } 
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
-import heroPlant from"@/assets/hero-plant.png.asset.json";
-
+const heroPlant = '/hero-plant.png';
 const CAPABILITIES: { icon: typeof Layers; title: string; shortDesc: string; fullDesc: string; img: string }[] = [
   {
     icon: Layers,
@@ -115,7 +114,7 @@ function FabricationServices() {
       {/* Hero */}
       <section className="relative h-[400px] overflow-hidden">
         <img
-          src={heroPlant.url}
+          src={heroPlant}
           alt="Welding and fabrication shop"
           className="absolute inset-0 h-full w-full object-cover [transform:scaleX(-1)]"
         />
