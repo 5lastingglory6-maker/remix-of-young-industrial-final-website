@@ -3,14 +3,13 @@ import { useState } from "react";
 import { Link } from "@/components/SiteLink";
 import { ArrowRight, ChevronDown, Phone, Truck, Gauge, Clock, MapPin, Award, ShieldCheck, Droplets, Home, Siren, Waves, Search, Factory, Utensils, Car, ClipboardCheck, CheckCircle } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
-import heroAsset from "@/assets/vac-hero-truck.jpg.asset.json";
-import septicAsset from "@/assets/vac-septic-pumping.jpg.asset.json";
-import sumpAsset from "@/assets/vac-sump-tank.jpg.asset.json";
-import catchBasinAsset from "@/assets/vac-catch-basin.jpg.asset.json";
-import bulkAsset from "@/assets/vac-bulk-hauling.jpg.asset.json";
-import emergencyAsset from "@/assets/vac-emergency-callout.jpg.asset.json";
-import industrialAsset from "@/assets/vac-industrial-truck.jpg.asset.json";
-
+const heroAsset = '/vac-hero-truck.jpg';
+const septicAsset = '/vac-septic-pumping.jpg';
+const sumpAsset = '/vac-sump-tank.jpg';
+const catchBasinAsset = '/vac-catch-basin.jpg';
+const bulkAsset = '/vac-bulk-hauling.jpg';
+const emergencyAsset = '/vac-emergency-callout.jpg';
+const industrialAsset = '/vac-industrial-truck.jpg';
 const SITE_URL = "https://id-preview--505c4137-b717-4e3e-b23f-a53d695b8ee2.lovable.app";
 
 const FACTS = [
@@ -56,27 +55,27 @@ const CORE_SERVICES: { icon: typeof Droplets; title: string; desc: string }[] = 
 
 const RESIDENTIAL_CARDS: { img: string; title: string; text: string }[] = [
   {
-    img: septicAsset.url,
+    img: septicAsset,
     title: "Septic Tank Pumping & Cleaning",
     text: "Your septic system handles wastewater every day, but the solids that accumulate inside the tank need to be removed periodically. As solids continue to build up, they can interfere with the proper operation of the system and eventually contribute to backups or damage to the septic field. Professional pumping and cleaning removes accumulated material and helps your system continue operating effectively. If you are unsure when your septic tank was last serviced, that uncertainty alone is a good reason to have the system assessed and establish an appropriate maintenance schedule.",
   },
   {
-    img: sumpAsset.url,
+    img: sumpAsset,
     title: "Holding Tank Pumping",
     text: "Unlike a septic system, a holding tank stores wastewater without processing it through a drainage field. That means it must be emptied as it fills. How frequently a holding tank needs service depends on factors such as tank capacity and household or building water usage. Waiting until the tank is completely full can result in wastewater backing up into your property. Regular pumping helps you stay ahead of the problem and avoid an unpleasant emergency.",
   },
   {
-    img: emergencyAsset.url,
+    img: emergencyAsset,
     title: "Emergency Septic Pumping",
     text: "Foul odours? Sewage backing up? Wastewater appearing where it should not be? These are signs that your system may require immediate attention. A blocked or overloaded septic system can create problems for your property and the surrounding environment. Vacuum pumping can remove excess waste and help restore the system to proper operating condition. When a septic or wastewater problem cannot wait, contact Young Industrial to discuss the situation and determine the right service.",
   },
   {
-    img: catchBasinAsset.url,
+    img: catchBasinAsset,
     title: "Drain & Sewer Cleaning",
     text: "A blocked drain does not always mean you need to dig up a pipe. Grease, sludge, roots, frozen lines, sediment, and other debris can restrict or completely stop the flow through drainage and sewer lines. High pressure jetting can help break through these materials, clean the inside of the line, and restore flow. Young Industrial can provide drain and sewer cleaning for residential and larger applications.",
   },
   {
-    img: bulkAsset.url,
+    img: bulkAsset,
     title: "Video Pipe Inspection",
     text: "Sometimes the most important question is not how do we clean the pipe? but what is actually causing the problem? Video pipe inspection allows the inside of a drainage or sewer line to be examined without immediately resorting to excavation. A camera can help identify blockages, damage, buildup, or other issues and help determine where a problem is located. When you know what is happening inside the pipe, you can make a more informed decision about what needs to happen next.",
   },
@@ -351,7 +350,7 @@ function VacuumTruckServices() {
       {/* HERO */}
       <section className="relative h-[360px] overflow-hidden md:h-[400px] lg:h-[480px]">
         <img
-          src={heroAsset.url}
+          src={heroAsset}
           alt="Young's Industrial vacuum truck on a job site"
           width={1600}
           height={900}
@@ -416,7 +415,7 @@ function VacuumTruckServices() {
               </p>
             </div>
             <img
-              src={industrialAsset.url}
+              src={industrialAsset}
               alt="Young's Industrial vacuum truck at a snowy work site"
               loading="lazy"
               width={1200}
@@ -539,7 +538,7 @@ function VacuumTruckServices() {
       <section className="section-pad bg-white" id="industrial">
         <div className="container-8xl grid items-center gap-12 lg:grid-cols-2 lg:gap-[70px]">
           <img
-            src={industrialAsset.url}
+            src={industrialAsset}
             alt="Young's Industrial vacuum truck at a snowy work site"
             loading="lazy"
             width={1200}
@@ -725,9 +724,9 @@ export const Route = createFileRoute("/services/vacuum-truck-services")({
           "Vacuum truck pumping, drain cleaning, video inspection and waste removal for homes, businesses and industrial sites in Newfoundland & Labrador.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: `${SITE_URL}${heroAsset.url}` },
+      { property: "og:image", content: `${SITE_URL}${heroAsset}` },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: `${SITE_URL}${heroAsset.url}` },
+      { name: "twitter:image", content: `${SITE_URL}${heroAsset}` },
     ],
   }),
   component: VacuumTruckServices,

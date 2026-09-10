@@ -1,25 +1,21 @@
 import { createFileRoute } from"@tanstack/react-router";
 import { Award, BadgeCheck, ShieldCheck, MapPin, Target, Handshake } from 'lucide-react';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
-import aboutUsAsset from '@/assets/about-rooftop-tech.jpg.asset.json';
-import commitmentAsset from '@/assets/about-daikin-vrv.jpg.asset.json';
-
+const aboutUsAsset = '/about-rooftop-tech.jpg';
+const commitmentAsset = '/about-daikin-vrv.jpg';
 import TrustBar from '@/components/TrustBar';
 import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
 import CommunitySection from '@/components/CommunitySection';
 import TeamSection from '@/components/TeamSection';
-import aboutBanner from '@/assets/company_building_and_car.jpg.asset.json';
-
-
-
+const aboutBanner = '/company_building_and_car.jpg';
 function About() {
   return (
     <>
       {/* Header image */}
       <section className="relative h-[360px] md:h-[440px] overflow-hidden">
         <img
-          src={aboutBanner.url}
+          src={aboutBanner}
           alt="Young's Industrial facility and team"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -53,7 +49,7 @@ function About() {
               </div>
             </div>
             <ImagePlaceholder
-              src={aboutUsAsset.url}
+              src={aboutUsAsset}
               alt="Young's Industrial technician servicing a rooftop condenser unit"
               className="aspect-square shadow-lg"
             />
@@ -68,7 +64,7 @@ function About() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div className="order-2 lg:order-1">
               <ImagePlaceholder
-                src={commitmentAsset.url}
+                src={commitmentAsset}
                 alt="Young's Industrial technician charging a Daikin VRV system on site"
                 className="aspect-square shadow-lg"
               />

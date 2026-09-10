@@ -24,7 +24,7 @@ const SERVICES: { icon: LucideIcon; title: string; desc: string; img: string }[]
     icon: Snowflake,
     title: 'Plate Freezer Installations',
     desc: 'High-capacity plate freezer packages for on-vessel processing operations.',
-    img: '/__l5e/assets-v1/0669bb9a-3e84-491e-91ce-97b8db15a49c/gen-plate-freezer.jpg',
+    img: '/gen-plate-freezer.jpg',
   },
   {
     icon: Settings,

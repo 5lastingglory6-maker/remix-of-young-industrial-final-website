@@ -1,9 +1,8 @@
 import { Link } from '@/components/SiteLink';
 import { ArrowRight } from 'lucide-react';
 import TrustBar from '@/components/TrustBar';
-import fabShop from '@/assets/gen-fab-shop.jpg.asset.json';
-import heatPump from '@/assets/hero-heatpump.jpg.asset.json';
-
+const fabShop = '/gen-fab-shop.jpg';
+const heatPump = '/hero-heatpump.jpg';
 export default function SplitSection() {
   return (
     <section className="section-pad bg-white" aria-labelledby="splitHeading">
@@ -37,7 +36,7 @@ export default function SplitSection() {
           <article className="order-2 flex flex-col overflow-hidden rounded-2xl border border-steel-200 shadow-sm lg:order-1">
             <div className="aspect-[16/10] overflow-hidden bg-steel-200">
               <img
-                src={fabShop.url}
+                src={fabShop}
                 alt="Certified welders at work in Young's fabrication shop"
                 className="h-full w-full object-cover"
                 loading="lazy"
@@ -74,7 +73,7 @@ export default function SplitSection() {
           <article className="order-1 flex flex-col overflow-hidden rounded-2xl border border-steel-200 shadow-sm lg:order-2">
             <div className="aspect-[16/10] overflow-hidden bg-steel-200">
               <img
-                src={heatPump.url}
+                src={heatPump}
                 alt="Residential heat pump installation by Young's technicians"
                 className="h-full w-full object-cover"
                 loading="lazy"

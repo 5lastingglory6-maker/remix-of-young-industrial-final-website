@@ -2,44 +2,43 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Link } from "@/components/SiteLink";
 import { ArrowRight, ChevronDown, Droplets, Waves, Truck, Home, Siren, Gauge, Container, ClipboardCheck, Phone, Mail } from "lucide-react";
-import heroAsset from "@/assets/vac-hero-truck.jpg.asset.json";
-import sumpAsset from "@/assets/vac-sump-tank.jpg.asset.json";
-import basinAsset from "@/assets/vac-catch-basin.jpg.asset.json";
-import haulAsset from "@/assets/vac-bulk-hauling.jpg.asset.json";
-import septicAsset from "@/assets/vac-septic-pumping.jpg.asset.json";
-import emergencyAsset from "@/assets/vac-emergency-callout.jpg.asset.json";
-import legacyAsset from "@/assets/p-marine-refrigeration.jpg.asset.json";
-
+const heroAsset = '/vac-hero-truck.jpg';
+const sumpAsset = '/vac-sump-tank.jpg';
+const basinAsset = '/vac-catch-basin.jpg';
+const haulAsset = '/vac-bulk-hauling.jpg';
+const septicAsset = '/vac-septic-pumping.jpg';
+const emergencyAsset = '/vac-emergency-callout.jpg';
+const legacyAsset = '/p-marine-refrigeration.jpg';
 const SERVICES: { icon: typeof Droplets; title: string; desc: string; img: string }[] = [
   {
     icon: Droplets,
     title: "Industrial Sump & Tank Cleaning",
     desc: "Deep clearing of heavy sludges, commercial grease traps, and manufacturing runoff water to keep your facility running smoothly.",
-    img: sumpAsset.url,
+    img: sumpAsset,
   },
   {
     icon: Waves,
     title: "Catch Basin & Storm Drain Cleansing",
     desc: "Rapid clearing of heavy sediment and debris from commercial properties and parking lots to prevent seasonal flooding.",
-    img: basinAsset.url,
+    img: basinAsset,
   },
   {
     icon: Truck,
     title: "Bulk Liquid Waste Hauling",
     desc: "Safe, high-volume transport of industrial liquid waste directly to certified environmental processing facilities with full regulatory compliance.",
-    img: haulAsset.url,
+    img: haulAsset,
   },
   {
     icon: Home,
     title: "Septic Tank Pumping",
     desc: "Fast, reliable, and routine maintenance cleanouts for local residential holding tanks to protect your property and system longevity.",
-    img: septicAsset.url,
+    img: septicAsset,
   },
   {
     icon: Siren,
     title: "Emergency Sewer Tank Backup Service",
     desc: "Rapid, on-call deployment to handle sudden system blockages, overflows, and liquid spills when time is critical.",
-    img: emergencyAsset.url,
+    img: emergencyAsset,
   },
 ];
 
@@ -132,7 +131,7 @@ function IndustrialVacuumServices() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <img
-          src={heroAsset.url}
+          src={heroAsset}
           alt="Young's Industrial vacuum tanker truck on an industrial job site"
           width={1600}
           height={900}
@@ -206,7 +205,7 @@ function IndustrialVacuumServices() {
       <section className="section-pad bg-white" id="legacy">
         <div className="container-8xl grid items-center gap-12 lg:grid-cols-2 lg:gap-[70px]">
           <img
-            src={legacyAsset.url}
+            src={legacyAsset}
             alt="Young's Industrial crew working on marine refrigeration and plumbing systems"
             loading="lazy"
             className="h-[380px] w-full rounded-2xl object-cover lg:h-[520px]"

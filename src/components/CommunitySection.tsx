@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import SectionHeading from '@/components/SectionHeading';
-import santaAsset from '@/assets/santa-musgravetown.jpg.asset.json';
-import tideAsset from '@/assets/turning-the-tide-marine-industry-awards.png.asset.json';
-import golfAsset from '@/assets/discovery-health-care-foundation-george-martin-memorial-golf-tournament.png.asset.json';
-import appleAsset from '@/assets/port-blandford-applefest.png.asset.json';
-import rocksAsset from '@/assets/young-s-industrial-was-a-gold-sponsor-of-the-on-the-rocks-music-festival..png.asset.json';
-import bellesAsset from '@/assets/belles-with-balls-concert-ovarian-cancer.png.asset.json';
-import concertAsset from '@/assets/setting-up-for-a-musgravetown-concert-weekend.png.asset.json';
-
+const santaAsset = '/santa-musgravetown.jpg';
+const tideAsset = '/turning-the-tide-marine-industry-awards.png';
+const golfAsset = '/discovery-health-care-foundation-george-martin-memorial-golf-tournament.png';
+const appleAsset = '/port-blandford-applefest.png';
+const rocksAsset = '/young-s-industrial-was-a-gold-sponsor-of-the-on-the-rocks-music-festival..png';
+const bellesAsset = '/belles-with-balls-concert-ovarian-cancer.png';
+const concertAsset = '/setting-up-for-a-musgravetown-concert-weekend.png';
 const STATS = [
   { num: '2018', label: 'Earliest confirmed sponsorship on record' },
   { num: '7', label: 'Different causes supported' },
@@ -26,42 +25,42 @@ const STORIES: {
     tags: ['Marine & Industrial'],
     badge: 'Multi-Year Sponsor',
     body:"Young's Industrial has sponsored the Turning the Tide Marine Industry Awards across multiple years, most recently backing the 9th Annual awards after previously supporting the 7th. The awards recognize the vessels, facilities, and people that keep Atlantic Canada's marine industry moving — the same world Young's Industrial has worked in since 2000, providing industrial refrigeration, fabrication, and equipment servicing for marine and offshore operations. It's a sponsorship that lines up directly with their own trade, rather than a name attached to something unrelated for the sake of visibility.",
-    image: tideAsset.url,
+    image: tideAsset,
   },
   {
     title: 'George Martin Memorial Golf Tournament',
     tags: ['Healthcare & Wellness'],
     badge: 'Recurring Hole Sponsor',
     body:"As a Hole Sponsor of the George Martin Memorial Golf Tournament, Young's Industrial helps fund Discovery Health Care Foundation's work supporting local healthcare services through Eastern Health. It's one of the Foundation's biggest annual fundraisers — sponsors and participants together raised $40,000 in one recent year, and the tournament has sold out to full team capacity in the years since. Young's Industrial shows up on that sponsor list alongside other regional businesses like Mercer's Marine, Meridian Engineering, and Clarenville Honda, year after year rather than as a single one-time gesture.",
-    image: golfAsset.url,
+    image: golfAsset,
   },
   {
     title: 'Port Blandford AppleFest',
     tags: ['Community Festivals'],
     badge: 'Sponsor Since 2020',
     body:"Young's Industrial has been a Macintosh Sponsor of the Port Blandford AppleFest since at least 2020, and returned again as a sponsor of the 2025 festival. AppleFest is a fall harvest weekend featuring an outdoor market, live entertainment, a car show, and activities for all ages — the kind of small-town event that depends on the same local businesses coming back to back it every single year. That it spans a five-year stretch, including a pandemic in between, says more about the relationship than any single donation could.",
-    image: appleAsset.url,
+    image: appleAsset,
   },
   {
     title: 'On The Rocks Music Festival',
     tags: ['Community Events'],
     badge: 'Gold Sponsor',
     body:"Young's Industrial was a Gold Sponsor of the On The Rocks Music Festival, the kickoff event for Clarenville Days Celebration, and the festival gave them their own dedicated Sponsor Spotlight post thanking them for keeping things cool — both in the community and at the festival itself. The night brought touring and local acts to Clarenville, pulling together volunteers, sponsors, and the town's Parks and Recreation staff to make it happen. Getting called out individually, rather than just listed among a wall of sponsor logos, is a decent measure of how visible their support actually was on the ground.",
-    image: rocksAsset.url,
+    image: rocksAsset,
   },
   {
     title: 'Belles with Balls NL',
     tags: ['Healthcare & Wellness'],
     badge: 'Silver Sponsor',
     body:"Young's Industrial stepped up as a Silver Sponsor for the inaugural The Lady Ball St. John's in Newfoundland and Labrador, backing local initiatives for ovarian cancer research, education, and patient support. Held on September 19 with Belles with Balls NL, the evening brings together fashion, fun, and entertainment in support of women living with and at risk of ovarian cancer across the province and Canada. Standing alongside other prominent regional brands, the sponsorship shows their support going beyond industrial work — putting their name behind a vital women's health cause in the community.",
-    image: bellesAsset.url,
+    image: bellesAsset,
   },
   {
     title: 'Setting Up for a Musgravetown Concert Weekend',
     tags: ['Local Events'],
     badge: 'Hands-On Support',
     body:"Ahead of a summer concert weekend headlined by Moonshine Runners, Rum Ragged, and Atomic Blonde, event organizers gave a public shout-out to Young's Industrial, J-1, and Riverbend for everything needed to get the field set up. It's a smaller, more casual mention than a formal sponsorship announcement, but it points to something real: when a local event needs equipment or hands-on help getting concert-ready, Young's Industrial is one of the names organizers already know to call. That kind of practical, unglamorous support is easy to overlook, but it's exactly what builds a company's reputation in a small community.",
-    image: concertAsset.url,
+    image: concertAsset,
   },
 ];
 
@@ -86,7 +85,7 @@ export default function CommunitySection() {
 
         <div className="relative mt-12 overflow-hidden rounded-2xl text-center">
           <img
-            src={santaAsset.url}
+            src={santaAsset}
             alt="Young's Industrial truck in the Musgravetown Santa Claus parade"
             className="absolute inset-0 h-full w-full object-cover"
           />
