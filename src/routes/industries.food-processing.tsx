@@ -9,7 +9,7 @@ import ProjectsSection from '@/components/ProjectsSection';
 import GallerySection from '@/components/GallerySection';
 
 const GALLERY_IMAGES = [
-  '/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg',
+  '/gen-machine-room.jpg',
   'https://images.pexels.com/photos/5953714/pexels-photo-5953714.jpeg?auto=compress&cs=tinysrgb&w=800',
   'https://images.pexels.com/photos/5321429/pexels-photo-5321429.jpeg?auto=compress&cs=tinysrgb&w=800',
   'https://images.pexels.com/photos/5532664/pexels-photo-5532664.jpeg?auto=compress&cs=tinysrgb&w=800',

@@ -16,7 +16,7 @@ const GALLERY_IMAGES = [
   'https://images.pexels.com/photos/35425762/pexels-photo-35425762.jpeg?auto=compress&cs=tinysrgb&w=800',
   'https://images.pexels.com/photos/4440227/pexels-photo-4440227.jpeg?auto=compress&cs=tinysrgb&w=800',
   'https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=800',
-  '/__l5e/assets-v1/b09c55df-2b0f-4001-b325-eafa36f1ae2a/gen-fab-shop.jpg',
+  '/gen-fab-shop.jpg',
 ];
 
 const NUMBERED = [
