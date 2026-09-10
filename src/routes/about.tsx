@@ -113,7 +113,7 @@ function About() {
             title="Certified to the Highest Industry Standards"
             description="We are certified ISO-9001-2015 and Canadian Welding Bureau Standards, reflecting our commitment to quality in everything we do."
           />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 scrollbar-hide sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
             {[
               { icon: BadgeCheck, label: 'ISO-9001-2015', desc: 'Quality Management System certified to international standards.' },
               { icon: ShieldCheck, label: 'CWB Standards', desc: 'Canadian Welding Bureau certified welding procedures and welders.' },
@@ -122,7 +122,7 @@ function About() {
             ].map((cert) => {
               const Icon = cert.icon;
               return (
-                <div key={cert.label} className="rounded-xl border border-steel-200 bg-steel-50 p-7 text-center">
+                <div key={cert.label} className="w-[75vw] shrink-0 snap-start rounded-xl border border-steel-200 bg-steel-50 p-7 text-center sm:w-auto">
                   <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-navy-800">
                     <Icon className="h-8 w-8 text-safety-400" />
                   </div>

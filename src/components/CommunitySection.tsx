@@ -102,7 +102,7 @@ export default function CommunitySection() {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 scrollbar-hide sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {STORIES.map((story) => (
             <StoryCard key={story.title} story={story} />
           ))}
@@ -116,7 +116,7 @@ function StoryCard({ story }: { story: (typeof STORIES)[number] }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <article className="flex flex-col overflow-hidden rounded-2xl border border-steel-200 bg-white">
+    <article className="flex w-[75vw] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-steel-200 bg-white sm:w-auto">
       <img
         src={story.image}
         alt={story.title}
