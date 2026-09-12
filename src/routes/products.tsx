@@ -4,24 +4,25 @@ import { ArrowRight } from 'lucide-react';
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
-const mycomAsset = '/mycom-cropped.jpg';
-const geneglaceAsset = '/geneglace-cropped.png';
-const cornellAsset = '/cornell-cropped.jpg';
+import mycomAsset from '@/assets/mycom-cropped.jpg.asset.json';
+import geneglaceAsset from '@/assets/geneglace-cropped.png.asset.json';
+import cornellAsset from '@/assets/cornell-cropped.jpg.asset.json';
+
 const CATEGORIES = [
   {
     title: 'Compressors & Evaporative Condensers',
     desc: 'Reliable compression and heat rejection from the names industrial refrigeration depends on. We supply Mycom compressors and parts alongside Baltimore Aircoil evaporative condensers to keep your plant running efficiently.',
-    img: mycomAsset,
+    img: mycomAsset.url,
   },
   {
     title: 'Ice Equipment, Chillers & Heat Exchangers',
     desc: 'Complete cooling and ice-making solutions for commercial and industrial use. From North Star and Geneglace ice equipment to process chillers and plate heat exchangers, we help you move and remove heat exactly where it is needed.',
-    img: geneglaceAsset,
+    img: geneglaceAsset.url,
   },
   {
     title: 'Pumps & Pump Rebuilding',
     desc: 'New Cornell pumps and complete in-shop rebuild services to keep your fluid systems moving. Our rebuild program restores worn pumps to reliable working condition and extends the life of your equipment.',
-    img: cornellAsset,
+    img: cornellAsset.url,
   },
 ];
 
@@ -31,7 +32,7 @@ function Products() {
       {/* Hero */}
       <section className="relative h-[360px] overflow-hidden">
         <img
-          src="/gen-machine-room.jpg"
+          src="/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg"
           alt="Industrial refrigeration products and equipment"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -49,7 +50,7 @@ function Products() {
         <div className="container-8xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <ImagePlaceholder
-              src="/gen-machine-room.jpg"
+              src="/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg"
               alt="Custom refrigeration package"
               className="aspect-[4/3] shadow-xl"
             />

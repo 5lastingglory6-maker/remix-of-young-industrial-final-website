@@ -8,8 +8,9 @@ import SplitSection from '@/components/SplitSection';
 import StatsSection from '@/components/StatsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import CareersBanner from '@/components/CareersBanner';
-const heroRefinery = '/hero-industrial-refinery.png';
-const vacLogo = '/young-vac-logo.jpg';
+import heroRefinery from "@/assets/hero-industrial-refinery.png.asset.json";
+import vacLogo from "@/assets/young-vac-logo.jpg.asset.json";
+
 const VAC_HIGHLIGHTS = [
   'Septic & holding tank pumping',
   'Grease traps, sumps & catch basins',
@@ -34,7 +35,7 @@ function Home() {
       <section className="relative">
         <div className="relative h-[600px] md:h-[680px] overflow-hidden">
           <img
-            src={heroRefinery}
+            src={heroRefinery.url}
             alt="Young's Industrial service trucks at a refinery site"
             className="absolute inset-0 h-full w-full object-cover"
           />
@@ -79,7 +80,7 @@ function Home() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div className="overflow-hidden rounded-2xl border border-steel-200 bg-white p-4 shadow-sm">
               <img
-                src={vacLogo}
+                src={vacLogo.url}
                 alt="Young's Vac Service — sewer tanks, garage drains, oil and water vacuum truck services"
                 className="mx-auto h-auto w-full max-w-md object-contain"
                 loading="lazy"

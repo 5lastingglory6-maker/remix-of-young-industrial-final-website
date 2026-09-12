@@ -6,11 +6,12 @@ import ImagePlaceholder from '@/components/ImagePlaceholder';
 import ImageFrame from '@/components/ImageFrame';
 import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
-const customRefrigerationAsset = '/p-custom-refrigeration-packages.jpg';
-const marineRefrigerationAsset = '/p-marine-refrigeration.jpg';
-const plateFreezerAsset = '/gen-plate-freezer.jpg';
-const industrialCoolingAsset = '/p-industrial-cooling-compressor-2.jpg';
-const machineRoomAsset = '/gen-machine-room.jpg';
+import customRefrigerationAsset from '@/assets/p-custom-refrigeration-packages.jpg.asset.json';
+import marineRefrigerationAsset from '@/assets/p-marine-refrigeration.jpg.asset.json';
+import plateFreezerAsset from '@/assets/gen-plate-freezer.jpg.asset.json';
+import industrialCoolingAsset from '@/assets/p-industrial-cooling-compressor-2.jpg.asset.json';
+import machineRoomAsset from '@/assets/gen-machine-room.jpg.asset.json';
+
 const APPROACH_POINTS = [
   'Ammonia, CO₂, glycol, and HFC/HFO capability',
   'Mycom, Baltimore Aircoil, North Star, and Geneglace equipment',
@@ -27,10 +28,10 @@ const PRODUCT_LINES = [
 ];
 
 const MARKETS: { icon: LucideIcon; title: string; desc: string; img: string }[] = [
-  { icon: Ship, title: 'Fishing Vessels & Seafood Processing Facilities', desc: 'RSW, hold cooling, and plant refrigeration systems for fishing vessels and land-based seafood processing operations.', img: marineRefrigerationAsset },
-  { icon: Snowflake, title: 'Industrial Refrigeration, Cold Storage & Blast Freezing', desc: 'Custom process cooling, food production, low-temperature storage warehouses, and high-capacity blast freeze systems for heavy industrial applications.', img: plateFreezerAsset },
-  { icon: Building2, title: 'Arena & Recreational Ice', desc: 'Ammonia ice plants with heat reclaim systems designed for arenas, rinks, and recreational ice facilities.', img: industrialCoolingAsset },
-  { icon: Flame, title: 'Heat Reclamation, Exchangers & Pipe Insulation', desc: 'Recover waste heat from refrigeration cycles, plus ASME-compliant pressure vessels, heat exchangers, and industrial pipe insulation.', img: machineRoomAsset },
+  { icon: Ship, title: 'Fishing Vessels & Seafood Processing Facilities', desc: 'RSW, hold cooling, and plant refrigeration systems for fishing vessels and land-based seafood processing operations.', img: marineRefrigerationAsset.url },
+  { icon: Snowflake, title: 'Industrial Refrigeration, Cold Storage & Blast Freezing', desc: 'Custom process cooling, food production, low-temperature storage warehouses, and high-capacity blast freeze systems for heavy industrial applications.', img: plateFreezerAsset.url },
+  { icon: Building2, title: 'Arena & Recreational Ice', desc: 'Ammonia ice plants with heat reclaim systems designed for arenas, rinks, and recreational ice facilities.', img: industrialCoolingAsset.url },
+  { icon: Flame, title: 'Heat Reclamation, Exchangers & Pipe Insulation', desc: 'Recover waste heat from refrigeration cycles, plus ASME-compliant pressure vessels, heat exchangers, and industrial pipe insulation.', img: machineRoomAsset.url },
 ];
 
 const SYSTEMS = [
@@ -52,7 +53,7 @@ function RefrigerationServices() {
       {/* Hero */}
       <section className="relative h-[400px] overflow-hidden">
         <img
-          src="/gen-machine-room.jpg"
+          src="/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg"
           alt="Industrial refrigeration compressor room"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -94,7 +95,7 @@ function RefrigerationServices() {
               </p>
             </div>
             <ImagePlaceholder
-              src={customRefrigerationAsset}
+              src={customRefrigerationAsset.url}
               alt="Custom industrial refrigeration package"
               className="aspect-[4/3] shadow-lg"
             />
@@ -106,7 +107,7 @@ function RefrigerationServices() {
       <section className="section-pad bg-white">
         <div className="container-8xl grid gap-12 lg:grid-cols-2 lg:items-center">
           <ImageFrame
-            src="/gen-machine-room.jpg"
+            src="/__l5e/assets-v1/df437beb-b7d0-4ff4-95ed-1f0ebc92f249/gen-machine-room.jpg"
             alt="Refrigeration equipment"
             className="aspect-[4/3] shadow-lg"
           />
@@ -234,7 +235,7 @@ function RefrigerationServices() {
               </Link>
             </div>
             <ImagePlaceholder
-              src="/gen-fab-shop.jpg"
+              src="/__l5e/assets-v1/b09c55df-2b0f-4001-b325-eafa36f1ae2a/gen-fab-shop.jpg"
               alt="Industrial refrigeration piping and equipment"
               className="aspect-[4/3] shadow-lg"
             />

@@ -10,7 +10,7 @@ import GallerySection from '@/components/GallerySection';
 
 const GALLERY_IMAGES = [
   'https://images.pexels.com/photos/8803230/pexels-photo-8803230.jpeg?auto=compress&cs=tinysrgb&w=800',
-  '/gen-fab-shop.jpg',
+  '/__l5e/assets-v1/b09c55df-2b0f-4001-b325-eafa36f1ae2a/gen-fab-shop.jpg',
   'https://images.pexels.com/photos/29257462/pexels-photo-29257462.jpeg?auto=compress&cs=tinysrgb&w=800',
   'https://images.pexels.com/photos/3823488/pexels-photo-3823488.jpeg?auto=compress&cs=tinysrgb&w=800',
   'https://images.pexels.com/photos/27354192/pexels-photo-27354192.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -194,7 +194,7 @@ function PulpAndPaper() {
               </div>
             </div>
             <ImagePlaceholder
-              src="/gen-fab-shop.jpg"
+              src="/__l5e/assets-v1/b09c55df-2b0f-4001-b325-eafa36f1ae2a/gen-fab-shop.jpg"
               alt="Pulp and paper industrial processing plant"
               className="aspect-[4/3] shadow-lg"
             />

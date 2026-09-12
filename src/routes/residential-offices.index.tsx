@@ -1,22 +1,23 @@
 import { createFileRoute } from"@tanstack/react-router";
 import { useEffect } from"react";
 import"@/styles/youngs.css";
-const heroAsset = '/hero-heatpump.jpg';
-const heritageAsset = '/heritage-plant.jpg';
-const gColdStorageAsset = '/g-coldstorage.jpg';
-const gMiniSplitAsset = '/g-minisplit.jpg';
-const gPanelAsset = '/g-panel.jpg';
-const gFishPlantAsset = '/g-fishplant.jpg';
-const gSolarAsset = '/g-solar.jpg';
-const gThermalAsset = '/g-thermal.jpg';
-const heroImg = heroAsset;
-const heritageImg = heritageAsset;
-const gColdStorage = gColdStorageAsset;
-const gMiniSplit = gMiniSplitAsset;
-const gPanel = gPanelAsset;
-const gFishPlant = gFishPlantAsset;
-const gSolar = gSolarAsset;
-const gThermal = gThermalAsset;
+import heroAsset from"@/assets/hero-heatpump.jpg.asset.json";
+import heritageAsset from"@/assets/heritage-plant.jpg.asset.json";
+import gColdStorageAsset from"@/assets/g-coldstorage.jpg.asset.json";
+import gMiniSplitAsset from"@/assets/g-minisplit.jpg.asset.json";
+import gPanelAsset from"@/assets/g-panel.jpg.asset.json";
+import gFishPlantAsset from"@/assets/g-fishplant.jpg.asset.json";
+import gSolarAsset from"@/assets/g-solar.jpg.asset.json";
+import gThermalAsset from"@/assets/g-thermal.jpg.asset.json";
+
+const heroImg = heroAsset.url;
+const heritageImg = heritageAsset.url;
+const gColdStorage = gColdStorageAsset.url;
+const gMiniSplit = gMiniSplitAsset.url;
+const gPanel = gPanelAsset.url;
+const gFishPlant = gFishPlantAsset.url;
+const gSolar = gSolarAsset.url;
+const gThermal = gThermalAsset.url;
 
 export const Route = createFileRoute("/residential-offices/")({
   component: ResidentialOffices,

@@ -5,7 +5,8 @@ import { ArrowRight, Wrench, Layers, CheckCircle2, Ship, HardHat, ChevronDown } 
 import ImagePlaceholder from '@/components/ImagePlaceholder';
 import CTABanner from '@/components/CTABanner';
 import SectionHeading from '@/components/SectionHeading';
-const heroPlant = '/hero-plant.png';
+import heroPlant from"@/assets/hero-plant.png.asset.json";
+
 const CAPABILITIES: { icon: typeof Layers; title: string; shortDesc: string; fullDesc: string; img: string }[] = [
   {
     icon: Layers,
@@ -31,12 +32,12 @@ const CAPABILITIES: { icon: typeof Layers; title: string; shortDesc: string; ful
 ];
 
 const INDUSTRIES = [
-  { title: 'Oil and Gas', to: '/industries/oil-and-gas', img: '/hero-industrial-refinery.png' },
-  { title: 'Pulp and Paper', to: '/industries/pulp-and-paper', img: '/heritage-plant.jpg' },
-  { title: 'Power Generation', to: '/industries/power-generation', img: '/hero-plant.png' },
-  { title: 'Municipal Water and Sewer', to: '/industries/municipal-water-sewer', img: '/p-industrial-cooling-compressor-2.jpg' },
-  { title: 'Food Processing', to: '/industries/food-processing', img: '/p-geneglace-flake-ice-seafood-processsing.jpg' },
-  { title: 'Ice Making', to: '/industries/ice-making', img: '/p-ice-flakes-industrial-chemistry-cool-down.jpg' },
+  { title: 'Oil and Gas', to: '/industries/oil-and-gas', img: '/__l5e/assets-v1/7b6049cb-6f74-4019-bbf4-05d1435007ac/hero-industrial-refinery.png' },
+  { title: 'Pulp and Paper', to: '/industries/pulp-and-paper', img: '/__l5e/assets-v1/355602eb-8ba6-41db-a209-3bd537ae9b3f/heritage-plant.jpg' },
+  { title: 'Power Generation', to: '/industries/power-generation', img: '/__l5e/assets-v1/8fed7112-d825-49aa-b99d-353d0a3ed276/hero-plant.png' },
+  { title: 'Municipal Water and Sewer', to: '/industries/municipal-water-sewer', img: '/__l5e/assets-v1/b0200281-43ff-41fc-9d90-66e01d6e59d3/p-industrial-cooling-compressor-2.jpg' },
+  { title: 'Food Processing', to: '/industries/food-processing', img: '/__l5e/assets-v1/d0c0acc5-f409-48c7-a540-a702e3aeeddc/p-geneglace-flake-ice-seafood-processsing.jpg' },
+  { title: 'Ice Making', to: '/industries/ice-making', img: '/__l5e/assets-v1/cd7fe245-4e7f-421f-951f-60d9a494f914/p-ice-flakes-industrial-chemistry-cool-down.jpg' },
 ];
 
 
@@ -114,7 +115,7 @@ function FabricationServices() {
       {/* Hero */}
       <section className="relative h-[400px] overflow-hidden">
         <img
-          src={heroPlant}
+          src={heroPlant.url}
           alt="Welding and fabrication shop"
           className="absolute inset-0 h-full w-full object-cover [transform:scaleX(-1)]"
         />
@@ -163,7 +164,7 @@ function FabricationServices() {
               </div>
             </div>
             <ImagePlaceholder
-              src="/p-fabrication-img.jpg"
+              src="/__l5e/assets-v1/0969a388-f64b-4022-b98a-fa6bb549ab46/p-fabrication-img.jpg"
               alt="Machine and welding shop fabrication work"
               className="aspect-[4/3] shadow-lg"
             />

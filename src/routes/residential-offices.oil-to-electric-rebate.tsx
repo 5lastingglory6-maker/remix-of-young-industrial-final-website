@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@/components/SiteLink";
-const heroAsset = '/hero-heatpump.jpg';
-const guidanceAsset = '/g-minisplit.jpg';
+import heroAsset from "@/assets/hero-heatpump.jpg.asset.json";
+import guidanceAsset from "@/assets/g-minisplit.jpg.asset.json";
+
 const TRUST = [
   {
     strong: "35+",
@@ -188,7 +189,7 @@ function OilToElectricRebate() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <img
-          src={heroAsset}
+          src={heroAsset.url}
           alt="Young's Industrial technicians installing a residential heat pump"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -295,7 +296,7 @@ function OilToElectricRebate() {
       <section className="section-pad bg-white" id="assessment">
         <div className="container-8xl grid items-center gap-12 lg:grid-cols-2 lg:gap-[70px]">
           <img
-            src={guidanceAsset}
+            src={guidanceAsset.url}
             alt="Wall-mounted mini-split heat pump installed in a home"
             className="h-[380px] w-full rounded-2xl object-cover lg:h-[520px]"
           />
