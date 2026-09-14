@@ -27,7 +27,19 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
+  const [hasUnread, setHasUnread] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Mirror `open` in a ref so an async reply can tell whether the drawer is visible.
+  const openRef = useRef(false);
+  useEffect(() => {
+    openRef.current = open;
+  }, [open]);
+
+  const openChat = () => {
+    setOpen(true);
+    setHasUnread(false);
+  };
 
   // Hydrate session id + history from localStorage after mount (SSR-safe).
   useEffect(() => {
@@ -104,6 +116,9 @@ export default function ChatWidget() {
           text: reply || "I didn't catch a reply for that. Could you try rephrasing?",
         },
       ]);
+
+      // Reply arrived while the drawer was closed — flag it with the unread dot.
+      if (!openRef.current) setHasUnread(true);
     } catch {
       setMessages((prev) => [
         ...prev,
