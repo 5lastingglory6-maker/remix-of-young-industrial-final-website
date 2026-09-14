@@ -1,33 +1,31 @@
-# Getting the revert to show up on GitHub
+# Floating chat bubble widget
 
-## What I confirmed
+A live chat bubble that follows visitors on every page, remembers the conversation, and sends messages to your n8n workflow.
 
-Inside your project, the revert worked correctly:
+## What visitors see
 
-- The 49 images are back in `src/assets`.
-- The `public` folder now only holds the site icon and `robots.txt` — every image that was moved there is gone.
-- The project's own history has the revert recorded as its newest change ("Reverted to commit 9230adc..."), and it removes all the `public/...` image files.
+- A round chat button fixed in the bottom-right corner of every page.
+- Clicking it opens a compact chat panel: a header with the title and a close button, the scrolling conversation, and a message box with a send button at the bottom.
+- Their own messages appear on the right in the site blue; replies appear on the left in light grey.
+- While the assistant is thinking, three animated dots show as a "typing" bubble.
+- If the message can't get through, a clear error bubble appears in the chat instead of the page breaking.
+- The panel keeps its conversation when they move between pages or reload the site.
 
-So nothing is broken on the Lovable side. The only thing missing is that the change hasn't appeared in your GitHub repository yet.
+## Styling
 
-## Answer to your question
+Uses the site's existing palette and fonts — navy header, blue send button and user bubbles, steel grey borders — so it matches the rest of the website. Panel sits above all page content, full-width-friendly on phones, fixed 380px panel on larger screens.
 
-Deleting the GitHub repository and recreating it would end up with the correct files, but it's the heaviest option and I'd rather not start there, because you'd lose:
+## The n8n connection
 
-- the repository's commit history,
-- any issues, pull requests, stars, or collaborator settings,
-- and any place that points at that repository (local clones, other hosting or deploy setups) would need to be re-pointed.
+The widget posts each message to the webhook address stored in your project settings. That address is not set yet, so I'll need it from you (or the widget will show its error bubble on every send). Each visitor gets a unique conversation ID that is sent with every message, so your workflow can keep track of who it's talking to.
 
-There are lighter steps that usually fix this, and only if all of them fail is recreating the repository worth doing.
+## Technical details
 
-## Proposed steps, lightest first
-
-1. **Confirm what you're looking at.** Check the branch on GitHub (usually `main`) and whether the newest commit shown is "Reverted to commit 9230adc...". If you're on an older branch or a cached page, the `public` folder will still look present.
-2. **Nudge a fresh sync.** I make one tiny, harmless edit and save it. That creates a new change, which pushes to GitHub and carries the folder deletion with it. This is the most common fix.
-3. **Reconnect GitHub.** If the new change also fails to arrive, the connection itself is stuck. You disconnect GitHub from the project and connect it again to the same repository. This keeps the repository and its history.
-4. **Last resort: fresh repository.** Only if reconnecting still doesn't push. You delete the repository on GitHub, then create a new one from the project. Do this knowing the history and repository settings start over.
-
-## Notes
-
-- No site code or design changes are involved; the website itself already looks and behaves the way it did before the `public` folder experiment.
-- Steps 1, 3 and 4 are things you do in GitHub and the project's GitHub settings; step 2 is the only one I perform.
+- New `src/components/ChatWidget.tsx`, rendered once in `src/routes/__root.tsx` inside the layout wrapper so it never unmounts on navigation.
+- Session ID: read `chat_session_id` from `localStorage`; if absent, generate with `crypto.randomUUID()` and store it.
+- Messages: state shape `{ id, role: 'user' | 'bot' | 'error', text }[]`, hydrated from `localStorage.chat_messages`, persisted via `useEffect` on every change.
+- All `localStorage` and `crypto` reads happen inside `useEffect` (not in `useState` initializers) to avoid SSR/hydration mismatch on this stack; the panel body renders after hydration.
+- Send: `POST` to `import.meta.env.VITE_N8N_WEBHOOK_URL` with `Content-Type: application/json` and body `{ chatInput, sessionId }`.
+- Reply extraction: `data.output ?? data.message ?? data.text`, with a fallback string if none present; non-OK responses and network failures are caught in `try/catch/finally` and rendered as an error bubble.
+- Loading flag disables the input and send button and renders the typing indicator; the message list auto-scrolls to the newest message.
+- `VITE_N8N_WEBHOOK_URL` added to the project environment (client-visible by design, as specified).
