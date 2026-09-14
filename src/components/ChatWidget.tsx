@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { MessageCircle, Send, X } from 'lucide-react';
+import { Send, X } from 'lucide-react';
 
 type Role = 'user' | 'bot' | 'error';
 
@@ -136,15 +136,48 @@ export default function ChatWidget() {
   return (
     <>
       {/* Launcher */}
-      <button
-        type="button"
-        onClick={() => setOpen((v) => !v)}
-        aria-label={open ? 'Close chat' : 'Open chat'}
-        aria-expanded={open}
-        className="fixed bottom-5 right-5 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-safety-600 text-white shadow-xl transition-transform hover:bg-safety-700 hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-navy-900 focus-visible:ring-offset-2"
-      >
-        {open ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
-      </button>
+      <div className="fixed bottom-5 right-5 z-[60]">
+        <div className="group relative">
+          {!open && (
+            <div
+              role="tooltip"
+              className="pointer-events-none absolute bottom-full right-0 mb-3 w-max max-w-[230px] translate-y-1 rounded-xl border border-steel-200 bg-white px-3 py-2 text-xs font-medium text-navy-800 opacity-0 shadow-lg transition duration-200 group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:translate-y-0 group-focus-within:opacity-100"
+            >
+              Need help? Ask us anything!
+              <span
+                aria-hidden="true"
+                className="absolute -bottom-[5px] right-6 h-2.5 w-2.5 rotate-45 border-b border-r border-steel-200 bg-white"
+              />
+            </div>
+          )}
+
+          <button
+            type="button"
+            onClick={() => (open ? setOpen(false) : openChat())}
+            aria-label={open ? 'Close chat' : 'Open chat'}
+            aria-expanded={open}
+            className="relative flex items-center gap-2 rounded-full bg-safety-600 px-4 py-3 text-sm font-semibold text-white shadow-xl transition-all hover:scale-[1.03] hover:bg-safety-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-navy-900 focus-visible:ring-offset-2"
+          >
+            {open ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <span className="whitespace-nowrap">
+                <span aria-hidden="true">👋</span> Hey, let's talk
+              </span>
+            )}
+
+            {hasUnread && !open && (
+              <span
+                aria-label="New reply"
+                className="absolute -right-1 -top-1 flex h-3.5 w-3.5"
+              >
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75" />
+                <span className="relative inline-flex h-3.5 w-3.5 rounded-full border-2 border-white bg-red-500" />
+              </span>
+            )}
+          </button>
+        </div>
+      </div>
 
       {/* Panel */}
       {open && (
