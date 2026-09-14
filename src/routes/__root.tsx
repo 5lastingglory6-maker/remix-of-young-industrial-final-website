@@ -123,6 +123,7 @@ function RootComponent() {
           <Outlet />
         </main>
         <Footer />
+        <ChatWidget />
       </div>
     </QueryClientProvider>
   );
