@@ -75,7 +75,7 @@ export default function ChatWidget() {
     setLoading(true);
 
     try {
-      const url = import.meta.env.VITE_N8N_WEBHOOK_URL as string | undefined;
+      const url = import.meta.env['VITE_N8N_WEBHOOK_URL'] as string | undefined;
       if (!url) throw new Error('Chat webhook URL is not configured.');
 
       const res = await fetch(url, {

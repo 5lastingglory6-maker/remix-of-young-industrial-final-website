@@ -15,6 +15,7 @@ import { reportLovableError } from"../lib/lovable-error-reporting";
 import { Link } from"@/components/SiteLink";
 import Header from"@/components/Header";
 import Footer from"@/components/Footer";
+import ChatWidget from"@/components/ChatWidget";
 
 function NotFoundComponent() {
   return (
