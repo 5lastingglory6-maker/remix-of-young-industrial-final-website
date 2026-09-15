@@ -27,7 +27,7 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
-  const [hasUnread, setHasUnread] = useState(true); // TEMP-SEED
+  const [hasUnread, setHasUnread] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // Mirror `open` in a ref so an async reply can tell whether the drawer is visible.
